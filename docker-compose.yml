@@ -1,0 +1,70 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: "3.1"
+services:
+
+    apache:
+      build: .docker/apache
+      container_name: vuejsymf_apache
+      working_dir: /var/www/vuejsymf
+      volumes:
+        - .:/var/www/vuejsymf
+      labels:
+        - traefik.backend=apache
+        - traefik.vuejsymf.frontend.rule=Host:${SITE_URL}
+
+    php-fpm:
+      build: .docker/php-fpm
+      container_name: vuejsymf_php-fpm
+      working_dir: /var/www/vuejsymf
+      volumes:
+        - .:/var/www/vuejsymf
+        - .docker/php-fpm/php-ini-overrides.ini:/etc/php/7.2/fpm/conf.d/99-overrides.ini
+
+    mysql:
+      image: mysql:8.0
+      container_name: vuejsymf_mysql
+      volumes:
+        - .docker/data/db:/var/lib/mysql
+      command:
+        - "--default-authentication-plugin=mysql_native_password"
+        - "--lower_case_table_names=1"
+      labels:
+        - traefik.enable=false
+      environment:
+        MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+        MYSQL_DATABASE: ${DB_NAME}
+        MYSQL_USER: ${DB_USERNAME}
+        MYSQL_PASSWORD: ${DB_PASSWORD}
+
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin
+      labels:
+        - traefik.backend=phpmyadmin
+        - traefik.vuejsymf.frontend.rule=Host:${PHPMYADMIN_URL}
+      environment:
+        PMA_HOST: mysql
+        PMA_PORT: 3306
+      links:
+        - mysql
+
+    traefik:
+      image: traefik:latest
+#      command: --docker --logLevel=ERROR
+      command: --api --docker --logLevel=ERROR
+      restart: unless-stopped
+      ports:
+        - "8084:80"
+        - "8088:8080"
+      labels:
+        - traefik.enable=false
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock:ro
+
+    maildev:
+      image: djfarrelly/maildev
+      container_name: vuejsymf_maildev
+      ports:
+        - 9001:80
+

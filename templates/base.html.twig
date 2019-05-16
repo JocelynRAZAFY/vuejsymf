@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Symfony 4 with a Vue.js SPA</title>
+        <link rel="icon" type="image/png" href="{{ asset('favicon-16x16.png') }}">
+        {{ encore_entry_link_tags('app') }}
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="{{ asset('bundles/goswebsocket/js/vendor/autobahn.min.js') }}"></script>
+        <script src="{{ asset('bundles/goswebsocket/js/gos_web_socket_client.js') }}"></script>
+        {{ encore_entry_script_tags('app') }}
+    </body>
+</html>
