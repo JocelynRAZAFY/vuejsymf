@@ -14,8 +14,8 @@
                     <mdb-nav-item href="#!" waves-fixed><mdb-icon fab class="text-black" icon="facebook-square"/></mdb-nav-item>
                     <mdb-nav-item href="#!" waves-fixed><mdb-icon fab icon="twitter"/></mdb-nav-item>
                     <mdb-nav-item href="https://github.com/mdbootstrap/bootstrap-material-design" waves-fixed class="border border-light rounded mr-1" target="_blank"><mdb-icon fab icon="github" class="mr-2"/>MDB GitHub </mdb-nav-item>
-                    <mdb-nav-item @click="logOut()" waves-fixed class="border border-light rounded" target="_blank">
-                        <mdb-icon icon="sign-out-alt" class="mr-2"/>logout
+                    <mdb-nav-item  waves-fixed class="border border-light rounded" >
+                        <mdb-btn outline="primary" @click="logOut()" rounded size="sm"><mdb-icon icon="sign-out-alt" class="mr-2"/>logout</mdb-btn>
                     </mdb-nav-item>
                 </mdb-navbar-nav>
             </mdb-navbar-toggler>
@@ -40,6 +40,9 @@
                 </router-link>
                 <router-link to="/404" @click.native="activeItem = 5">
                     <mdb-list-group-item :action="true" :class="activeItem === 5 && 'active'"><mdb-icon icon="exclamation" class="mr-3"/>404</mdb-list-group-item>
+                </router-link>
+                <router-link to="/buttons" @click.native="activeItem = 6">
+                    <mdb-list-group-item :action="true" :class="activeItem === 6 && 'active'"><mdb-icon icon="anchor" class="mr-3"/>Buttons</mdb-list-group-item>
                 </router-link>
             </mdb-list-group>
         </div>

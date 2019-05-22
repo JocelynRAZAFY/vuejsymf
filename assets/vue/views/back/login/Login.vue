@@ -12,7 +12,7 @@
                     </mdb-view>
                     <mdb-card-body>
                         <form-login></form-login>
-                        <GoogleLogin :params="params" :onSuccess="onSuccess" :onFailure="onFailure">Login</GoogleLogin>
+                        <!--<GoogleLogin :params="params" :onSuccess="onSuccess" :onFailure="onFailure">Login</GoogleLogin>-->
 
                     </mdb-card-body>
                     <mdb-card-footer class="links-light profile-card-footer">

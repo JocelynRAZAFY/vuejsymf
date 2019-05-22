@@ -7,6 +7,7 @@ import Tables from '../views/back/components/Tables'
 import Maps from '../views/back/components/Maps'
 import BadGateway from '../views/back/components/BadGateway'
 import Login from '../views/back/login/Login'
+import Buttons from '../views/back/components/button/Buttons'
 
 Vue.use(Router)
 
@@ -55,6 +56,12 @@ let router = new Router({
             path: '*',
             props: { page: 5 },
             redirect: '/404'
+        },
+        {
+            path: '/buttons',
+            name: 'Buttons',
+            props: { page: 6 },
+            component: Buttons
         }
     ]
 })
