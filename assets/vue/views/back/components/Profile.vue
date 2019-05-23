@@ -170,11 +170,11 @@ export default {
         user: {
             id: '2',
             username: 'Onjamalala',
-            email: 'rt1jocelyn@gmail.com'
+            email: 'r_onjamalala@gmail.com'
         }
     }
   },
-    computed:{
+  computed:{
 
     },
   methods: {
@@ -185,7 +185,7 @@ export default {
       localStorage.removeItem('userToken')
       this.$store.commit('user/SET_LOGOUT')
     },
-      sendDataUser(){
+    sendDataUser(){
         let param = {
             type: 'add',
             user: this.$data.user

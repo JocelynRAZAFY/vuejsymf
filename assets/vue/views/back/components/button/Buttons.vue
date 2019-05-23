@@ -23,7 +23,8 @@
                         <modal-left-component></modal-left-component>
                     </div>
                     <div class="col">
-                        <h1> {{ afterModal }}</h1>
+                        <h1> {{ information }}</h1>
+                        <h1> {{ user.email }}</h1>
                     </div>
                     <div class="col">
 
@@ -40,8 +41,7 @@
     import RadioButtonComponent from './RadioButtonComponent';
     import ToggleButtonComponent from './ToggleButtonComponent';
     import ModalLeftComponent from './ModalLeftComponent';
-    import { createNamespacedHelpers } from 'vuex'
-    const { mapState, mapActions, mapGetters } = createNamespacedHelpers('mdb');
+    import { mapState, mapActions, mapGetters } from 'vuex';
 
     export default {
         name: "Buttons",
@@ -57,12 +57,16 @@
           }
         },
         computed: {
-            ...mapState([
+            ...mapState('mdb',[
                 'information'
             ]),
-            afterModal(){
-                return this.information
-            }
+            ...mapState('user',[
+                'user','token'
+            ])
+        },
+        created() {
+            console.log(this.token)
+            console.log(this.user)
         }
     }
 </script>

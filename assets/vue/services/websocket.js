@@ -5,21 +5,19 @@ webSocket.on("socket/connect", function (session) {
     console.log("Successfully Connected!");
 
     session.subscribe("acme/channel", function(uri, payload){
-        if(store.getters['user/getToken']){
-            if(payload.msg){
-                if(payload.msg.type === 'add'){
-                    store.commit('user/SET_TEST',payload.msg.user)
-                    store.commit('websocket/SET_MESSAGE_RECEIVED', 'nouvelle utilisateur disponible')
-                }
-                // console.log(payload.msg.user)
+        if(store.getters['user/getToken'] && payload.msg){
+            if(payload.msg.type === 'add'){
+                store.commit('user/SET_TEST',payload.msg.user)
+                store.commit('websocket/SET_MESSAGE_RECEIVED', 'nouvelle utilisateur disponible')
             }
         }
     });
-
     sendMessageWs = function(message){
         // console.log(message)
         session.publish("acme/channel", message);
     }
+
+
 })
 
 webSocket.on("socket/disconnect", function (error) {

@@ -4,7 +4,7 @@ export default {
     state: {
         isLoading: false,
         error: null,
-        messageReceived: {},
+        messageReceived: null,
     },
     getters: {
         isLoading (state) {

@@ -539,7 +539,7 @@
 <script>
     
 import { mdbRow, mdbCol, mdbBtn, mdbCard, mdbCardBody, mdbCardHeader, mdbCardText, mdbIcon, mdbTbl, mdbBarChart, mdbPieChart, mdbLineChart, mdbRadarChart, mdbDoughnutChart, mdbListGroup, mdbListGroupItem, mdbBadge, mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter } from 'mdbvue'
-
+import { mapState, mapActions, mapGetters } from 'vuex';
 export default {
   name: 'Dashboard',
   components: {
@@ -566,7 +566,7 @@ export default {
     mdbModalBody,
     mdbModalFooter
   },
-  data () {
+    data () {
     return {
       showFrameModalTop: false,
       showFrameModalBottom: false,
@@ -716,7 +716,7 @@ export default {
         maintainAspectRatio: false
       }
     }
-  }
+    }
 }
 </script>
 

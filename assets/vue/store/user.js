@@ -60,10 +60,10 @@ export default {
             state.error = null
             state.user = {}
         },
-        'FETCHING_USER_SUCCESS' (state, login) {
+        'FETCHING_USER_SUCCESS' (state, user) {
             state.isLoading = false
             state.error = null
-            state.user = login
+            state.user = user
         },
         'FETCHING_USER_ERROR' (state, error) {
             state.isLoading = false
@@ -88,7 +88,8 @@ export default {
             const token = localStorage.getItem('userToken')
             try {
                 const res = await UserAPI.getData(token)
-                commit('FETCHING_USER_SUCCESS', res.data)
+                commit('FETCHING_USER_SUCCESS', res.data.data)
+
                 let param = {
                     type: 'add',
                     user: res.data.data

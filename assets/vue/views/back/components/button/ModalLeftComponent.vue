@@ -32,8 +32,7 @@
 
 <script>
     import { mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbBtn } from 'mdbvue';
-    import { createNamespacedHelpers } from 'vuex'
-    const { mapState, mapActions } = createNamespacedHelpers('mdb')
+    import { mapState, mapActions } from 'vuex'
 
     export default {
         name: "ModalLeftComponent",
@@ -52,7 +51,7 @@
             };
         },
         methods:{
-            ...mapActions([
+            ...mapActions('mdb',[
                 'setInformation'
             ]),
             sendInformationToComponent(e){
