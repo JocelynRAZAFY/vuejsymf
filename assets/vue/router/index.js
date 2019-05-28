@@ -8,6 +8,7 @@ import Maps from '../views/back/components/Maps'
 import BadGateway from '../views/back/components/BadGateway'
 import Login from '../views/back/login/Login'
 import Buttons from '../views/back/components/button/Buttons'
+import Custom from '../views/back/components/custom/Custom'
 
 Vue.use(Router)
 
@@ -62,6 +63,12 @@ let router = new Router({
             name: 'Buttons',
             props: { page: 6 },
             component: Buttons
+        },
+        {
+            path: '/custom',
+            name: 'Custom',
+            props: { page: 7 },
+            component: Custom
         }
     ]
 })

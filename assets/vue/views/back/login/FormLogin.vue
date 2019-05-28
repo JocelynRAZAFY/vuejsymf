@@ -41,6 +41,7 @@
                 if(!this.$store.getters['user/getToken']){
                      this.$router.push('/')
                 }else {
+                    // console.log('formLogin')
                     this.$router.push('/dashboard')
                 }
             },
@@ -53,6 +54,7 @@
                 e.preventDefault()
                 await this.$store.dispatch('user/loginUser', this.user)
                 if(this.$store.getters['user/getToken']){
+                    console.log(this.$store.getters['user/getToken'])
                     this.$router.push({path: '/dashboard'})
                 }
             },

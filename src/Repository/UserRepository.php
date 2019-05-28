@@ -21,13 +21,21 @@ class UserRepository extends ServiceEntityRepository
 
     public function transform(User $user)
     {
-        return [];
+        return [
+            'id' => $user->getId(),
+            'username' => $user->getUsername(),
+            'email' => $user->getEmail(),
+        ];
     }
 
 
-    public function transformAll()
+    public function transformAll($users)
     {
-        return [];
+        $arrayUser = [];
+        foreach ($users as $user){
+            $arrayUser[] = $this->transform($user);
+        }
+        return $arrayUser;
     }
 
     public function pagination($page,$max){

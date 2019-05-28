@@ -1,0 +1,79 @@
+resources:
+  App\Entity\Custom:
+    collectionOperations:
+      list_custom:
+        route_name: 'list_custom'
+        controller: 'App\Controller\CustomController'
+        swagger_context:
+          summary: récupérer les informations de l'utilisateur connecté
+          responses:
+            200:
+              description: Informations de l'utilisateur connecté
+              schema:
+                type: object
+                properties:
+                  account_type:
+                    type: string
+                    description: type de compte
+    itemOperations:
+      add_custom:
+        route_name: 'add_custom'
+        controller: 'App\Controller\CustomController'
+        swagger_context:
+          summary:  add custom
+          parameters:
+            - name: body
+              in: body
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    description: id of costum
+                  title:
+                    type: string
+                    description: title
+                  content:
+                    type: string
+                    description: title
+
+          responses:
+            200:
+              description: custom add
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: result
+
+      edit_custom:
+        route_name: 'edit_custom'
+        controller: 'App\Controller\CustomController'
+        swagger_context:
+          summary:  edit custom
+          parameters:
+            - name: body
+              in: body
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    description: id of costum
+                  title:
+                    type: string
+                    description: title
+                  content:
+                    type: string
+                    description: title
+
+          responses:
+            200:
+              description: custom add
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: result

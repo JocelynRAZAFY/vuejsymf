@@ -35,6 +35,7 @@
         mdbCardTitle,mdbCardText,mdbCardFooter,mdbIcon } from  'mdbvue'
     import FormLogin from './FormLogin'
     import GoogleLogin from 'vue-google-login';
+    import { mapGetters } from 'vuex';
 
     export default {
         name: "Login",

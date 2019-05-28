@@ -34,7 +34,7 @@
             ...mapGetters('user',['getToken','user']),
             ...mapGetters('websocket',['messageReceived']),
             hasToken(){
-                const token = this.getToken
+                const token = localStorage.getItem('userToken')
                 this.$store.commit('user/SET_TOKEN',token)
                 return token
             },

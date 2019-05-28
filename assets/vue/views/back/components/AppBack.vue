@@ -1,5 +1,6 @@
 <template>
     <div class="flexible-content">
+        <!--{{ verifToken }}-->
         <!--Navbar-->
         <mdb-navbar class="flexible-navbar white" light position="top" scrolling>
             <mdb-navbar-brand href="https://mdbootstrap.com/docs/vue/" target="_blank">MDB</mdb-navbar-brand>
@@ -43,6 +44,9 @@
                 </router-link>
                 <router-link to="/buttons" @click.native="activeItem = 6">
                     <mdb-list-group-item :action="true" :class="activeItem === 6 && 'active'"><mdb-icon icon="anchor" class="mr-3"/>Buttons</mdb-list-group-item>
+                </router-link>
+                <router-link to="/custom" @click.native="activeItem = 7">
+                    <mdb-list-group-item :action="true" :class="activeItem === 7 && 'active'"><mdb-icon icon="list" class="mr-3"/>custom</mdb-list-group-item>
                 </router-link>
             </mdb-list-group>
         </div>
@@ -103,11 +107,22 @@
                 activeItem: 1
             }
         },
+        computed:{
+            verifToken(){
+                if(!localStorage.getItem('userToken')){
+                    this.$router.push('/')
+                }else {
+                    console.log('verifToken')
+                    this.$router.push('/dashboard')
+                }
+            }
+        },
         methods: {
             logOut(){
                 console.log('ato')
                 localStorage.removeItem('userToken')
                 this.$store.commit('user/SET_LOGOUT')
+                this.$router.push('/')
             }
         },
         beforeMount () {
