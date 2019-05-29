@@ -32,7 +32,7 @@ class CustomController extends AbstractController
     }
 
     /**
-     * @Route("/api/back/custom/list", name="list_custom")
+     * @Route("/api/back/custom/list", name="list_custom", methods={"GET"})
      */
     public function listCustom()
     {

@@ -13,7 +13,7 @@
 <script>
 
     import Login from './views/back/login/Login'
-    import AppBack from './views/back/components/AppBack'
+    import AppBack from './views/back/components/AppBack/AppBack'
     import { mapState, mapActions, mapGetters } from 'vuex';
 
     export default {
@@ -28,15 +28,16 @@
             }
         },
         created() {
-
+            console.log('App created')
         },
         computed: {
             ...mapGetters('user',['getToken','user']),
             ...mapGetters('websocket',['messageReceived']),
             hasToken(){
+                console.log('App computed hasToken')
                 const token = localStorage.getItem('userToken')
                 this.$store.commit('user/SET_TOKEN',token)
-                return token
+                return this.getToken
             },
             getInformation(){
                 let user = this.user

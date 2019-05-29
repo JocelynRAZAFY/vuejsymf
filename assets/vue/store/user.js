@@ -1,4 +1,4 @@
-import  UserAPI from '../api/user'
+import  UserAPI from '../api/userApi'
 import WebSocket from '../services/websocket'
 
 export default {

@@ -1,6 +1,5 @@
 <template>
     <form @submit="login($event)">
-        {{ getToken }}
         <p class="h4 text-center mb-4">Sign in </p>
         <div class="grey-text">
             <mdb-input v-model="user.email" label="Your email" icon="envelope" type="email"/>
@@ -15,6 +14,7 @@
 
 <script>
     import { mdbInput,mdbBtn } from  'mdbvue'
+    import { mapActions, mapGetters } from 'vuex'
 
     export default {
         name: "FormLogin",
@@ -31,30 +31,13 @@
               token: null
           }
         },
-        created(){
-            if(this.$store.getters['user/getToke']){
-                this.$router.push('/dashboard')
-            }
-        },
-        computed: {
-            getToken(){
-                if(!this.$store.getters['user/getToken']){
-                     this.$router.push('/')
-                }else {
-                    // console.log('formLogin')
-                    this.$router.push('/dashboard')
-                }
-            },
-            webSocketAcme(){
-
-            }
-        },
         methods: {
+            ...mapActions('user',['loginUser']),
+            ...mapGetters('user',['getToken']),
             async login(e){
                 e.preventDefault()
-                await this.$store.dispatch('user/loginUser', this.user)
-                if(this.$store.getters['user/getToken']){
-                    console.log(this.$store.getters['user/getToken'])
+                await this.loginUser(this.user)
+                if(this.getToken){
                     this.$router.push({path: '/dashboard'})
                 }
             },

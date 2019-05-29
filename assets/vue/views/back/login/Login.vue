@@ -61,10 +61,19 @@
                 }
             }
         },
+        created(){
+            if(localStorage.getItem('userToken')){
+                this.$router.push('/dashboard')
+            }else {
+                this.$router.push('/')
+            }
+        },
+        computed: {
+
+        },
         methods: {
             onSuccess(googleUser) {
                 console.log(googleUser);
-
                 // This only gets the user information: id, name, imageUrl and email
                 console.log(googleUser.getBasicProfile());
             },
