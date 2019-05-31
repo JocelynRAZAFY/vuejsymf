@@ -103,9 +103,9 @@ export default {
             console.log(param)
             // sendMessageWs(message)
         },
-        test(param){
-            console.log(param)
-           // return param
+        logOut({commit}){
+            localStorage.removeItem('userToken')
+            commit('SET_LOGOUT')
         }
 
     }

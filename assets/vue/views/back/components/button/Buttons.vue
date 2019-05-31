@@ -65,8 +65,7 @@
             ])
         },
         created() {
-            console.log(this.token)
-            console.log(this.user)
+
         }
     }
 </script>

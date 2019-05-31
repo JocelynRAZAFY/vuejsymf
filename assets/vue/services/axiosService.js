@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-    post(url, params, token = null){
+    post(url,params,token){
         var config;
 
         if(token){
@@ -11,6 +11,7 @@ export default {
                     'Authorization': 'Bearer ' + token
                 }
             }
+
         }else {
             config = {
                 headers: {
@@ -19,7 +20,7 @@ export default {
             }
         }
 
-        return axios.post('/api/user/login', params, config)
+        return axios.post(url, params, config)
     },
     get(url, token){
         const config = {

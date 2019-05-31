@@ -3,7 +3,7 @@ import customApi from '../api/customApi'
 export default {
     namespaced: true,
     state: {
-        customs: [],
+        customs: {},
     },
     getters:{
         customs (state){
@@ -12,21 +12,33 @@ export default {
     },
     mutations:{
         'SET_CUSTOMS' (state,customs){
-            state.customs = customs
+            state.customs = {listes: customs, loaded: true}
+        },
+        'SET_CUSTOM' (state,custom){
+            
+            state.customs.listes.push(custom)
         }
     },
     actions:{
-        setCustoms(context,customs){
-            context.commit('SET_CUSTOMS',customs)
-        },
-        async listCustoms({context},token){
+        async listCustoms({commit,getters},token){
             try {
-                console.log(context.getters('user/getToken'))
-                const res = await customApi.listCustom(localStorage.getItem('userToken'))
-                context.commit('SET_CUSTOMS', res.data)
+                if (!getters.customs.loaded) {
+                    const res = await customApi.listCustom(token)
+                    commit('SET_CUSTOMS', res.data.data)
+                }
+                // console.log(getters.customs)
             } catch (err) {
-
+                commit('SET_CUSTOMS', { success: false, code: 401 })
             }
         },
+        async updateCustom({commit},data){
+
+            try {
+                const res = await customApi.updateCustom(data)
+                commit('SET_CUSTOM', res.data.data)
+            } catch (e) {
+
+            }
+        }
     }
 }

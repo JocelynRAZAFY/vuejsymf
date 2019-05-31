@@ -30,7 +30,7 @@ class CustomRepository extends ServiceEntityRepository
             'id' => $custom->getId(),
             'title' => $custom->getTitle(),
             'content' => $custom->getContent(),
-            'created' => $custom->getCreated()->format('d/m/Y'),
+            'created' => $custom->getCreated(),
             'user' => $this->userRepository->transform($custom->getUser()),
         ];
     }

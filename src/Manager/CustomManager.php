@@ -49,7 +49,10 @@ class CustomManager extends BaseManager
             $custom->setUser($this->getUser());
         }
 
-        $custom->setTitle($this->data->title);
+        if(isset($this->data->title)){
+            $custom->setTitle($this->data->title);
+        }
+
         $custom->setContent($this->data->content);
         $this->save($custom);
 

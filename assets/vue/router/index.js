@@ -69,6 +69,12 @@ let router = new Router({
             name: 'Custom',
             props: { page: 7 },
             component: Custom
+        },
+        {
+            path: '/custom/:id',
+            name: 'FormCustom',
+            props: { page: 7 },
+            component: Custom
         }
     ]
 })
