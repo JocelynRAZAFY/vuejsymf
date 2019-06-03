@@ -4,6 +4,7 @@ import UserModule from './user'
 import WebsocketModule from './websocket'
 import MdbModule from './mdb'
 import CustomModule from './custom'
+import PersonneModule from './personne'
 
 Vue.use(Vuex)
 export default new Vuex.Store({
@@ -12,5 +13,6 @@ export default new Vuex.Store({
         websocket: WebsocketModule,
         mdb: MdbModule,
         custom: CustomModule,
+        personne: PersonneModule
     },
 })

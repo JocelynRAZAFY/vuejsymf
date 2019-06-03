@@ -74,6 +74,8 @@ class PersonneManager extends BaseManager
     {
         $personnes = $this->personneRepository->findAll();
         $personnes = $this->personneRepository->transformAll($personnes);
+        $personnes = $this->getDataFormat($personnes);
+
         return $this->success($personnes);
     }
 
@@ -87,5 +89,24 @@ class PersonneManager extends BaseManager
         }
 
         return $this->success('Personne deleted');
+    }
+
+    private function getDataFormat($personnes){
+
+        return [
+            'links' => [
+                'pagination' => [
+                    'total' => 50,
+                    'per_page' => 3,
+                    'current_page' => 1,
+                    'last_page' => 2,
+                    'next_page_url' => '...',
+                    'prev_page_url' => '...',
+                    'from' => 1,
+                    'to' => 3,
+                ]
+            ],
+            'data' => $personnes
+        ];
     }
 }

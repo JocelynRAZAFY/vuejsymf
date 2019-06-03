@@ -2,7 +2,8 @@
     <div>
         <!--api-url="https://vuetable.ratiw.net/api/users"-->
         <vuetable ref="vuetable"
-                  api-url="http://127.0.0.1:8000/api/back/personne/all"
+                  :api-mode="false"
+                  :data="localData"
                   :fields="fields"
                   :sort-order="sortOrder"
                   :css="css.table"
@@ -11,15 +12,14 @@
                   @vuetable:pagination-data="onPaginationData"
                   @vuetable:loading="onLoading"
                   @vuetable:loaded="onLoaded"
-                  :http-options="httpOptions"
         >
 
             <template slot="actions" slot-scope="props">
                 <div class="table-button-container">
-                    <button class="btn btn-warning btn-sm" @click="editRow(props.rowData)">
-                        <span class="glyphicon glyphicon-pencil"></span> Edit</button>&nbsp;&nbsp;
-                    <button class="btn btn-danger btn-sm" @click="deleteRow(props.rowData)">
-                        <span class="glyphicon glyphicon-trash"></span> Delete</button>&nbsp;&nbsp;
+                    <button class="btn btn-warning px-3" @click="editRow(props.rowData)" aria-hidden="true">
+                        <i class="far fa-edit"></i></button>&nbsp;&nbsp;
+                    <button class="btn btn-danger px-3" @click="deleteRow(props.rowData)" aria-hidden="true">
+                        <i class="far fa-trash-alt"></i></button>&nbsp;&nbsp;
                 </div>
             </template>
 
@@ -28,13 +28,15 @@
                              :css="css.pagination"
                              @vuetable-pagination:change-page="onChangePage"
         ></vuetable-pagination>
+
     </div>
 </template>
 
 <script>
     import Vuetable from 'vuetable-2'
     import VuetablePagination from 'vuetable-2/src/components/VuetablePagination'
-    import { mapGetters } from 'vuex'
+    import { mapGetters, mapActions, mapState } from 'vuex'
+
 
     export default
     {
@@ -89,16 +91,26 @@
                             last: '',
                         },
                     }
-                }
+                },
+                perso: {}
             }
         },
         computed: {
-            ...mapGetters('user',['getToken']),
-            httpOptions() {
-                return {headers: {'Authorization': this.getToken}} //table props -> :http-options="httpOptions"
-            },
+            ...mapGetters('personne',['personnes']),
+            localData(){
+                console.log(this.personnes)
+                return this.personnes
+            }
+        },
+        created(){
+            this.getPersonne()
         },
         methods:{
+            ...mapActions('personne',['getAllPersonne']),
+            ...mapGetters('user',['getToken']),
+            getPersonne(){
+                this.getAllPersonne(this.getToken())
+            },
             onPaginationData (paginationData) {
                 this.$refs.pagination.setPaginationData(paginationData)
             },
@@ -106,7 +118,16 @@
                 this.$refs.vuetable.changePage(page)
             },
             editRow(rowData){
-                alert("You clicked edit on"+ JSON.stringify(rowData))
+                this.$emit('showLineTable',rowData)
+                // this.perso.id = rowData.id
+                // this.perso.firstName = rowData.firstName
+                // this.perso.lastName = rowData.lastName
+                // this.perso.registration = rowData.registration
+                // this.perso.birtday = rowData.birtday
+                // this.perso.adress = rowData.adress
+                // this.perso.tel = rowData.tel
+
+                    // alert("You clicked edit on"+ JSON.stringify(rowData))
             },
             deleteRow(rowData){
                 alert("You clicked delete on"+ JSON.stringify(rowData))
@@ -116,6 +137,9 @@
             },
             onLoaded() {
                 console.log('loaded! .. hide your spinner here')
+            },
+            setPerso(){
+
             }
         }
     }
