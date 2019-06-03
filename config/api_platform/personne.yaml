@@ -1,0 +1,103 @@
+resources:
+  App\Entity\Personne:
+    collectionOperations:
+      all_personne:
+        route_name: 'all_personne'
+        controller: 'App\Controller\PersonneController'
+        swagger_context:
+          summary: Liste des personnes
+          responses:
+            200:
+              description: Liste des personnes
+              schema:
+                type: object
+                properties:
+                  account_type:
+                    type: string
+                    description: type de compte
+    itemOperations:
+      add_custom:
+        route_name: 'add_personne'
+        controller: 'App\Controller\PersonneController'
+        swagger_context:
+          summary:  add personne
+          parameters:
+            - in: body
+              name: body
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    description: id of costum
+                  lastName:
+                    type: string
+                    description: lastName
+                  firstName:
+                    type: string
+                    description: firstName
+                  birthday:
+                    type: string
+                    description: birthday
+                  registrationNumber:
+                    type: string
+                    description: registrationNumber
+                  adress:
+                    type: string
+                    description: adress
+                  tel:
+                    type: string
+                    description: tel
+
+          responses:
+            200:
+              description: custom add
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: result
+
+      edit_custom:
+        route_name: 'edit_personne'
+        controller: 'App\Controller\PersonneController'
+        swagger_context:
+          summary:  edit custom
+          parameters:
+            - in: body
+              name: body
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                    description: id of costum
+                  lastName:
+                    type: string
+                    description: lastName
+                  firstName:
+                    type: string
+                    description: firstName
+                  birthday:
+                    type: string
+                    description: birthday
+                  registrationNumber:
+                    type: string
+                    description: registrationNumber
+                  adress:
+                    type: string
+                    description: adress
+                  tel:
+                    type: string
+                    description: tel
+
+          responses:
+            200:
+              description: custom add
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    description: result

@@ -8,12 +8,12 @@
 
 namespace App\Manager;
 
-
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
+use Symfony\Component\Serializer\SerializerInterface;
 
 class UserManager extends BaseManager
 {
@@ -23,9 +23,10 @@ class UserManager extends BaseManager
         ContainerInterface $container,
         RequestStack $requestStack,
         SessionInterface $session,
-        LoggerInterface $logger)
+        LoggerInterface $logger,
+        SerializerInterface $serializer)
     {
-        parent::__construct($em, $container, $requestStack, $session, $logger);
+        parent::__construct($em, $container, $requestStack, $session, $logger, $serializer);
     }
 
     public function userDatas()

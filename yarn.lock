@@ -1131,6 +1131,13 @@ autoprefixer@^7.1.2:
     postcss "^6.0.17"
     postcss-value-parser "^3.2.3"
 
+axios@^0.15.3:
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
+  integrity sha1-LJ1jiy4ZGgjqHWzJiOrda6W9wFM=
+  dependencies:
+    follow-redirects "1.0.0"
+
 axios@^0.18.0:
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
@@ -1253,6 +1260,11 @@ bootstrap-vue@^2.0.0-rc.19:
     popper.js "^1.15.0"
     portal-vue "^2.1.1"
     vue-functional-data-merge "^2.0.7"
+
+bootstrap.table-editor@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/bootstrap.table-editor/-/bootstrap.table-editor-0.1.0.tgz#be9263e6f79a0e658665ce9bb17f63fd606ac2fc"
+  integrity sha1-vpJj5veaDmWGZc6bsX9j/WBqwvw=
 
 bootstrap@^4.3.1:
   version "4.3.1"
@@ -2738,6 +2750,13 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+follow-redirects@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.0.0.tgz#8e34298cbd2e176f254effec75a1c78cc849fd37"
+  integrity sha1-jjQpjL0uF28lTv/sdaHHjMhJ/Tc=
+  dependencies:
+    debug "^2.2.0"
 
 follow-redirects@^1.0.0, follow-redirects@^1.3.0:
   version "1.7.0"
@@ -6136,6 +6155,11 @@ vue-functional-data-merge@^2.0.7:
   resolved "https://registry.yarnpkg.com/vue-functional-data-merge/-/vue-functional-data-merge-2.0.7.tgz#bdee655181eacdcb1f96ce95a4cc14e75313d1da"
   integrity sha512-pvLc+H+x2prwBj/uSEIITyxjz/7ZUVVK8uYbrYMmhDvMXnzh9OvQvVEwcOSBQjsubd4Eq41/CSJaWzy4hemMNQ==
 
+vue-google-login@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/vue-google-login/-/vue-google-login-2.0.0.tgz#09077ccb4a822b6b34b4efae01c66f264e787d00"
+  integrity sha512-PIdmFk3tGJXV9QtBrXmZzRXNikNFORqlYuKZ+KFakrG572fepXRUReQLy0oGc5hIcytQhMrr1loLv2UF79XQDA==
+
 vue-hot-reload-api@^2.3.0:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
@@ -6151,6 +6175,11 @@ vue-loader@^15.7.0:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-notification@^1.3.16:
+  version "1.3.16"
+  resolved "https://registry.yarnpkg.com/vue-notification/-/vue-notification-1.3.16.tgz#b2eca3416a94a46e35aa2516710a0fcd2c8515ea"
+  integrity sha512-ZL57GcyeAnJK5ItWWkZ3+wcf3OlLFs9WIukxXwJBSIzIXUlXXxXzeVkZrhUf3Q/FkbWWAYRmzKXXP742ZiyxOw==
 
 vue-numeric@^2.3.0:
   version "2.3.0"
@@ -6207,6 +6236,13 @@ vue@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
+
+vuetable-2@^1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/vuetable-2/-/vuetable-2-1.7.5.tgz#7528c817279ccb774d9e26a169f1d19695b77310"
+  integrity sha512-cKLD7ufbwNZZA1exOU1U7oXC+nrXq88YwDNAPL8dR9Kk1Pj/HMvLhOr4xw/15748c4OfYxBZQvVTJh4Hnu35AA==
+  dependencies:
+    axios "^0.15.3"
 
 vuex@^3.1.0:
   version "3.1.0"
@@ -6375,6 +6411,11 @@ websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
   integrity sha512-nqHUnMXmBzT0w570r2JpJxfiSD1IzoI+HGVdd3aZ0yNi3ngvQ4jv1dtHt5VGxfI2yj5yqImPhOK4vmIh2xMbGg==
+
+when@^3.7.8:
+  version "3.7.8"
+  resolved "https://registry.yarnpkg.com/when/-/when-3.7.8.tgz#c7130b6a7ea04693e842cdc9e7a1f2aa39a39f82"
+  integrity sha1-xxMLan6gRpPoQs3J56Hyqjmjn4I=
 
 which-module@^2.0.0:
   version "2.0.0"

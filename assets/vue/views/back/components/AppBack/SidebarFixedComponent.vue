@@ -37,6 +37,11 @@
                     <mdb-icon icon="list" class="mr-3"/>custom
                 </mdb-list-group-item>
             </router-link>
+            <router-link to="/personne" @click.native="activeItem = 8">
+                <mdb-list-group-item :action="true" :class="activeItem === 8 && 'active'">
+                    <mdb-icon icon="list" class="mr-3"/>personne
+                </mdb-list-group-item>
+            </router-link>
         </mdb-list-group>
     </div>
 </template>

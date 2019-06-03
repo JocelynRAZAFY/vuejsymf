@@ -61,6 +61,11 @@ abstract class BaseManager
     protected $logger;
 
     /**
+     * @var SerializerInterface
+     */
+    public $serializer;
+
+    /**
      * BaseManager constructor.
      * @param EntityManagerInterface $em
      * @param ContainerInterface $container
@@ -73,7 +78,8 @@ abstract class BaseManager
         ContainerInterface $container,
         RequestStack $requestStack,
         SessionInterface $session,
-        LoggerInterface $logger)
+        LoggerInterface $logger,
+        SerializerInterface $serializer)
     {
         $this->em = $em;
         $this->container = $container;
@@ -83,6 +89,7 @@ abstract class BaseManager
         $this->session = $session;
         $this->files = $this->request->files->all();
         $this->logger = $logger;
+        $this->serializer = $serializer;
     }
 
     /**
