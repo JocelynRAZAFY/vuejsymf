@@ -56,7 +56,7 @@ export default {
             try {
                 const res = await customApi.updateCustom(param)
                 let data = res.data.data
-            if(Array.isArray(data)){
+                if (typeof data.rows !== 'undefined') {
                     commit('SET_CUSTOMS', data)
                 }else {
                     dispatch('editCustom',data)

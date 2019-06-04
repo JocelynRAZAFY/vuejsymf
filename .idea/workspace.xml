@@ -4,23 +4,15 @@
     <list default="true" id="88be613c-f880-495b-81ee-0a5eb0b34999" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/vue/api/customApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/api/customApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vue/api/personneApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/api/personneApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vue/services/axiosService.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/services/axiosService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/vue/store/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/store/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vue/store/personne.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/store/personne.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vue/views/back/components/custom/Custom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/views/back/components/custom/Custom.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vue/views/back/components/custom/ListCustom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/views/back/components/custom/ListCustom.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vue/views/back/components/personne/FormPersonne.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/views/back/components/personne/FormPersonne.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vue/views/back/components/personne/MyVuetable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/views/back/components/personne/MyVuetable.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/vue/views/back/components/personne/TablePersonne.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/views/back/components/personne/TablePersonne.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/api_platform/custom.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/api_platform/custom.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/CustomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CustomController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager/CustomManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/CustomManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CustomRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CustomRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,19 +23,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="TablePersonne.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/TablePersonne.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="330">
               <caret line="22" column="103" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
-              <folding>
-                <element signature="e#603#640#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Custom.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/Custom.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
@@ -55,68 +44,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="FormCustom.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
-              <folding>
-                <element signature="e#1838#2008#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/vue/store/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+            <state relative-caret-position="599">
+              <caret line="59" column="39" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Manager/CustomManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-              <folding>
-                <element signature="e#111#133#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="236">
+              <caret line="63" column="21" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="CustomController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/CustomController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-              <folding>
-                <element signature="e#34#64#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="230">
+              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="ListCustom.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/ListCustom.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-              <folding>
-                <element signature="e#719#772#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/CustomRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+            <state relative-caret-position="315">
+              <caret line="63" column="51" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -175,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/Services/AcmeTopic.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/templates/custom/index.html.twig" />
-        <option value="$PROJECT_DIR$/config/api_platform/custom.yaml" />
         <option value="$PROJECT_DIR$/src/Entity/Custom.php" />
         <option value="$PROJECT_DIR$/src/Repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/assets/vue/services/websocket.js" />
@@ -216,14 +183,31 @@
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/Custom.vue" />
         <option value="$PROJECT_DIR$/assets/vue/services/axiosService.js" />
         <option value="$PROJECT_DIR$/src/Repository/CustomRepository.php" />
-        <option value="$PROJECT_DIR$/assets/vue/api/customApi.js" />
-        <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue" />
-        <option value="$PROJECT_DIR$/src/Controller/CustomController.php" />
-        <option value="$PROJECT_DIR$/src/Manager/CustomManager.php" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/ListCustom.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/api/customApi.js" />
+        <option value="$PROJECT_DIR$/src/Controller/CustomController.php" />
+        <option value="$PROJECT_DIR$/config/api_platform/custom.yaml" />
+        <option value="$PROJECT_DIR$/src/Manager/CustomManager.php" />
         <option value="$PROJECT_DIR$/assets/vue/store/custom.js" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -456,6 +440,18 @@
             <path>
               <item name="vuejsymf" type="b2602c69:ProjectViewProjectNode" />
               <item name="vuejsymf" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="api_platform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vuejsymf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vuejsymf" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vuejsymf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vuejsymf" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -565,53 +561,47 @@
       <workItem from="1559287929524" duration="24920000" />
       <workItem from="1559372020201" duration="28660000" />
       <workItem from="1559632066265" duration="28872000" />
+      <workItem from="1559673622937" duration="5082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330524000" />
+    <option name="totallyTimeSpent" value="335606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20111732" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="npm" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20092379" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/login/FormLogin.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#566#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/gos_web_socket.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -623,9 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="e#1334#1465#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,10 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1194#1258#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -675,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="35" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="35" />
-          <folding>
-            <element signature="e#34#62#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,9 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
-          <folding>
-            <element signature="e#30#62#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -733,9 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
-          <folding>
-            <element signature="e#235#279#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,9 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -762,9 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
-          <folding>
-            <element signature="e#115#155#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,9 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="24" column="16" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,13 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
-          <folding>
-            <element signature="n#mdb-row#0;n#section#2;n#section#0;n#template#0;n#!!top" />
-            <element signature="n#mdb-col#0;n#mdb-row#0;n#section#3;n#section#0;n#template#0;n#!!top" />
-            <element signature="n#mdb-col#1;n#mdb-row#0;n#section#3;n#section#0;n#template#0;n#!!top" />
-            <element signature="n#mdb-col#2;n#mdb-row#0;n#section#3;n#section#0;n#template#0;n#!!top" />
-            <element signature="e#27092#27392#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -827,9 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="e#34#66#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,9 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
           <caret line="108" column="17" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="17" />
-          <folding>
-            <element signature="e#115#139#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -850,46 +802,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/store/personne.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/api/personneApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/store/personne.js" />
+    <entry file="file://$PROJECT_DIR$/assets/vue/api/personneApi.js" />
     <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/MyVuetable.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-323">
           <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
-          <folding>
-            <element signature="e#1317#1350#0" expanded="true" />
-            <element signature="e#1707#2399#0" />
-            <element signature="e#1729#1938#0" />
-            <element signature="e#1960#2118#0" />
-            <element signature="e#2172#2350#0" />
-            <element signature="e#2428#2507#0" />
-            <element signature="e#2530#3567#0" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/FormPersonne.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
-          <folding>
-            <element signature="n#form#0;n#mdb-card-body#0;n#mdb-card#0;n#mdb-col#0;n#mdb-row#0;n#mdb-container#0;n#template#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/FormPersonne.vue" />
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-vue/src/components/table/table.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2220">
@@ -913,11 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/TablePersonne.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
+        <state relative-caret-position="330">
           <caret line="22" column="103" selection-start-line="22" selection-start-column="103" selection-end-line="22" selection-end-column="103" />
-          <folding>
-            <element signature="e#603#640#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,15 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/CustomRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="825">
           <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/api/customApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -948,36 +860,6 @@
           <caret line="30" column="20" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="20" />
           <folding>
             <element signature="e#30#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CustomController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding>
-            <element signature="e#34#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Manager/CustomManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-          <folding>
-            <element signature="e#111#133#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="89" column="34" selection-start-line="89" selection-start-column="34" selection-end-line="89" selection-end-column="34" />
-          <folding>
-            <element signature="e#1838#2008#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -992,20 +874,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/api/customApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/api_platform/custom.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CustomController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Manager/CustomManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/ListCustom.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding>
-            <element signature="e#719#772#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="63" column="51" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/vue/store/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        <state relative-caret-position="599">
+          <caret line="59" column="39" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
         </state>
       </provider>
     </entry>

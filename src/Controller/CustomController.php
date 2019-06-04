@@ -24,7 +24,7 @@ class CustomController extends AbstractController
     }
 
     /**
-     * @Route("/api/back/custom/edit", name="edit_custom", methods={"POST"})
+     * @Route("/api/back/custom/update", name="update_custom", methods={"POST"})
      */
     public function editCustom()
     {

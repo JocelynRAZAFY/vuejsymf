@@ -2,11 +2,11 @@
     <div>
         <mdb-col md="12">
             <mdb-card class="mb-4">
-                <mdb-card-header>Liste Personne sur Vuetable-2</mdb-card-header>
+                <mdb-card-header>Form custom</mdb-card-header>
                 <mdb-card-body>
                     <div id="table-wrapper" class="ui container">
-                        <form @submit="editCustom($event)" class="text-center border border-light p-5">
-                            <p class="h4 mb-4">Contact us</p>
+                        <form @submit="saveCustom($event)" class="text-center border border-light p-5">
+                            <p class="h4 mb-4">Custom</p>
                             <!-- Name -->
                             <input type="text"
                                    id="title"
@@ -85,23 +85,13 @@
         },
         methods:{
             ...mapActions('custom',['updateCustom','getAllPagination','setCustom']),
-            async editCustom(e){
+            async saveCustom(e){
                 e.preventDefault()
                 await this.updateCustom({param: this.customForm})
 
-                // if(this.customForm.id == 0){
-                //     await this.getAllPagination({firstResult: 1, perPage: 3})
-                // }else {
-                //     this.customs.forEach(function (custom) {
-                //         if(custom.id == this.customForm.id){
-                //             this.setCustom(custom)
-                //         }
-                //     })
-                // }
-
-                // this.customForm.id = 0
-                // this.customForm.title = ''
-                // this.customForm.content = ''
+                this.customForm.id = 0
+                this.customForm.title = ''
+                this.customForm.content = ''
             }
         },
         watch:{
