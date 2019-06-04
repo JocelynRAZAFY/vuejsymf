@@ -1,10 +1,13 @@
 import axiosService from '../services/axiosService'
 
 export default {
-    listCustom(token){
-        return axiosService.get('/api/back/custom/list',token)
+    getAllCustomPagination(param){
+        return axiosService.post('api/back/custom/pagination',param)
     },
-    updateCustom({param,token}){
-        return axiosService.post('/api/back/custom/edit',param,token)
+    listCustom(){
+        return axiosService.get('/api/back/custom/list')
+    },
+    updateCustom({param}){
+        return axiosService.post('/api/back/custom/edit',param)
     }
 }

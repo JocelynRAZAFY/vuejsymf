@@ -5,7 +5,7 @@
             <list-custom></list-custom>
         </div>
         <div class="col-md-6">
-            <form-custom v-if="this.$route.params.id"></form-custom>
+            <form-custom></form-custom>
         </div>
     </div>
 

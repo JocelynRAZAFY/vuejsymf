@@ -3,7 +3,7 @@
         <!--<img src="../../../../../images/logo.png">-->
         <mdb-col md="12">
             <mdb-card class="mb-4">
-                <mdb-card-header>Liste Personne</mdb-card-header>
+                <mdb-card-header>Liste Personne sur Vuetable-2</mdb-card-header>
                 <mdb-card-body>
                     <div id="table-wrapper" class="ui container">
                         <my-vuetable @showLineTable="showLineTable"></my-vuetable>

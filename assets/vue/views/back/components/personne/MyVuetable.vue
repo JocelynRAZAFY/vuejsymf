@@ -1,14 +1,12 @@
 <template>
     <div>
-        <!--api-url="https://vuetable.ratiw.net/api/users"-->
         <vuetable ref="vuetable"
                   :api-mode="false"
-                  :data="localData"
+                  :data-manager="dataManager"
                   :fields="fields"
                   :sort-order="sortOrder"
                   :css="css.table"
-                  pagination-path=""
-                  :per-page="3"
+                  pagination-path="pagination"
                   @vuetable:pagination-data="onPaginationData"
                   @vuetable:loading="onLoading"
                   @vuetable:loaded="onLoaded"
@@ -36,7 +34,7 @@
     import Vuetable from 'vuetable-2'
     import VuetablePagination from 'vuetable-2/src/components/VuetablePagination'
     import { mapGetters, mapActions, mapState } from 'vuex'
-
+    import _ from "lodash";
 
     export default
     {
@@ -66,6 +64,8 @@
                     },
                     'actions'
                 ],
+                perPage: 3,
+                data: [],
                 sortOrder: [
                     { field: 'lastName', direction: 'asc' }
                 ],
@@ -92,13 +92,13 @@
                         },
                     }
                 },
-                perso: {}
+                perso: {},
+
             }
         },
         computed: {
             ...mapGetters('personne',['personnes']),
             localData(){
-                console.log(this.personnes)
                 return this.personnes
             }
         },
@@ -109,7 +109,7 @@
             ...mapActions('personne',['getAllPersonne']),
             ...mapGetters('user',['getToken']),
             getPersonne(){
-                this.getAllPersonne(this.getToken())
+                this.getAllPersonne()
             },
             onPaginationData (paginationData) {
                 this.$refs.pagination.setPaginationData(paginationData)
@@ -119,15 +119,6 @@
             },
             editRow(rowData){
                 this.$emit('showLineTable',rowData)
-                // this.perso.id = rowData.id
-                // this.perso.firstName = rowData.firstName
-                // this.perso.lastName = rowData.lastName
-                // this.perso.registration = rowData.registration
-                // this.perso.birtday = rowData.birtday
-                // this.perso.adress = rowData.adress
-                // this.perso.tel = rowData.tel
-
-                    // alert("You clicked edit on"+ JSON.stringify(rowData))
             },
             deleteRow(rowData){
                 alert("You clicked delete on"+ JSON.stringify(rowData))
@@ -138,8 +129,41 @@
             onLoaded() {
                 console.log('loaded! .. hide your spinner here')
             },
-            setPerso(){
+            dataManager(sortOrder, pagination) {
+                if (this.data.length < 1) return;
 
+                let local = this.data;
+
+                // sortOrder can be empty, so we have to check for that as well
+                if (sortOrder.length > 0) {
+                    console.log("orderBy:", sortOrder[0].sortField, sortOrder[0].direction);
+                    local = _.orderBy(
+                        local,
+                        sortOrder[0].sortField,
+                        sortOrder[0].direction
+                    );
+                }
+
+                pagination = this.$refs.vuetable.makePagination(
+                    local.length,
+                    this.perPage
+                );
+                console.log('pagination:', pagination)
+                let from = pagination.from - 1;
+                let to = from + this.perPage;
+
+                return {
+                    pagination: pagination,
+                    data: _.slice(local, from, to)
+                };
+            }
+        },
+        watch:{
+            localData(resp){
+                this.data = resp.data
+            },
+            data(newVal, oldVal) {
+                this.$refs.vuetable.refresh();
             }
         }
     }

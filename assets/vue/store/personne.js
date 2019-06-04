@@ -37,12 +37,12 @@ export default {
         }
     },
     actions: {
-        async getAllPersonne({commit, state},token){
-            const resp = await personneAPI.allPersonne(token)
+        async getAllPersonne({commit, state}){
+            const resp = await personneAPI.allPersonne()
             commit('SET_PERSONNES',resp.data.data)
         },
-        async updatePersonne({commit},{param,token}){
-             const resp = await personneAPI.updatePersonne({param,token})
+        async updatePersonne({commit},{param}){
+             const resp = await personneAPI.updatePersonne({param})
             commit('UPDATE_PERSONNE',resp.data.data)
         }
     }

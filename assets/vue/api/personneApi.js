@@ -1,7 +1,7 @@
 import axiosService from '../services/axiosService'
 
 export default {
-    updatePersonne({param,token}){
+    updatePersonne({param}){
         let url;
 
         if(param.id === 0){
@@ -11,8 +11,8 @@ export default {
         }
         return axiosService.post(url,param,token)
     },
-    allPersonne(token)
+    allPersonne()
     {
-        return axiosService.get('/api/back/personne/all',token)
+        return axiosService.get('/api/back/personne/all')
     }
 }

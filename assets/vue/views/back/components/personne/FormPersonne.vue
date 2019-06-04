@@ -164,7 +164,7 @@
             ...mapActions('personne',['updatePersonne']),
             async validPersonne(e){
                 e.preventDefault()
-              await this.updatePersonne({param: this.perso,token: this.getToken})
+              await this.updatePersonne({param: this.perso})
                 this.addPersonne()
             },
             addPersonne(){

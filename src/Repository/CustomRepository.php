@@ -45,22 +45,21 @@ class CustomRepository extends ServiceEntityRepository
         return $arrayCustom;
     }
 
-    // /**
-    //  * @return Custom[] Returns an array of Custom objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @param $value
+     * @return mixed
+     */
+    public function getCustomsPagination($firstResult)
     {
         return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
+            ->orderBy('c.id', 'DESC')
+            ->setFirstResult($firstResult)
+            ->setMaxResults(3)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
+
 
     /*
     public function findOneBySomeField($value): ?Custom

@@ -1,8 +1,9 @@
 import axios from "axios";
 
 export default {
-    post(url,params,token){
+    post(url,params){
         var config;
+        var token = localStorage.getItem('userToken');
 
         if(token){
             config = {
@@ -22,7 +23,8 @@ export default {
 
         return axios.post(url, params, config)
     },
-    get(url, token){
+    get(url){
+        var token = localStorage.getItem('userToken');
         const config = {
             headers: {
                 'Authorization': 'Bearer ' + token

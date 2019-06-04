@@ -16,7 +16,7 @@
     "dependencies": {
         "@babel/polyfill": "^7.4.3",
         "accounting": "^0.4.1",
-        "axios": "^0.18.0",
+        "axios": "^0.19.0",
         "babel-loader": "^8.0.5",
         "bootstrap": "^4.3.1",
         "bootstrap-css-only": "^4.3.1",
@@ -33,6 +33,7 @@
         "vue-router": "^3.0.6",
         "vue-template-compiler": "^2.6.10",
         "vue2-google-maps": "^0.10.6",
+        "vuejs-paginate": "^2.1.0",
         "vuetable-2": "^2.0.0-beta.4",
         "vuex": "^3.1.0",
         "when": "^3.7.8"

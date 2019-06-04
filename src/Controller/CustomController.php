@@ -38,4 +38,12 @@ class CustomController extends AbstractController
     {
         return $this->customManager->getAllCustom();
     }
+
+    /**
+     * @Route("/api/back/custom/pagination", name="pagination_custom", methods={"POST"})
+     */
+    public function paginationCustom()
+    {
+        return $this->customManager->getAllPagination();
+    }
 }
