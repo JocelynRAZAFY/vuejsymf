@@ -60,7 +60,7 @@ resources:
                     description: result
 
       edit_custom:
-        route_name: 'edit_personne'
+        route_name: 'update_personne'
         controller: 'App\Controller\PersonneController'
         swagger_context:
           summary:  edit custom
