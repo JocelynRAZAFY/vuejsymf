@@ -24,9 +24,9 @@ class PersonneController extends AbstractController
     }
 
     /**
-     * @Route("/api/back/personne/edit", name="edit_personne", methods={"POST"})
+     * @Route("/api/back/personne/update", name="update_personne", methods={"POST"})
      */
-    public function editPersonne()
+    public function updatePersonne()
     {
         return $this->personneManager->updatePersone();
     }

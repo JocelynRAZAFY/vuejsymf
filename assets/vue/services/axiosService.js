@@ -1,9 +1,13 @@
+var getToken = function () {
+    return localStorage.getItem('userToken')
+}
+
 import axios from "axios";
 
 export default {
     post(url,params){
         var config;
-        var token = localStorage.getItem('userToken');
+        var token = getToken()
 
         if(token){
             config = {
@@ -24,7 +28,7 @@ export default {
         return axios.post(url, params, config)
     },
     get(url){
-        var token = localStorage.getItem('userToken');
+        var token = getToken()
         const config = {
             headers: {
                 'Authorization': 'Bearer ' + token

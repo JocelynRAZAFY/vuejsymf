@@ -16,12 +16,18 @@
       <change afterPath="$PROJECT_DIR$/assets/vue/views/back/components/dashboard/TableDashboard.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Manager/ChartManager.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/assets/vue/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/vue/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/vue/views/back/components/AppBack/AppBack.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/views/back/components/AppBack/AppBack.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/vue/views/back/components/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/views/back/components/dashboard/Dashboard.vue" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/assets/vue/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vue/services/axiosService.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vue/services/axiosService.js" afterDir="false" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/dashboard/ChartDashboard.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,10 +47,36 @@
               <folding>
                 <element signature="e#840#988#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vue/store/custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="personne.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vue/store/personne.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="axiosService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vue/services/axiosService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Manager/ChartManager.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,11 +85,21 @@
               <folding>
                 <element signature="e#111#151#0#PHP" expanded="true" />
                 <element signature="e#1805#2297#1#PHP" />
+=======
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/vue/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="65" column="26" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="26" />
+              <folding>
+                <element signature="e#235#279#0" expanded="true" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/dashboard/DoughnutChart.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -64,29 +107,67 @@
               <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
               <folding>
                 <element signature="e#360#450#0" expanded="true" />
+=======
+      <file leaf-file-name="Custom.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/Custom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+              <folding>
+                <element signature="e#30#62#0#PHP" expanded="true" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/vue/store/chart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
               <caret line="40" column="30" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="30" />
+=======
+      <file leaf-file-name="UserFixtures.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DataFixtures/UserFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="websocket.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vue/services/websocket.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/vue/api/chartApi.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+=======
+      <file leaf-file-name="FormPersonne.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/FormPersonne.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1140">
+              <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+              <folding>
+                <element signature="n#form#0;n#mdb-card-body#0;n#mdb-card#0;n#mdb-col#0;n#mdb-row#0;n#mdb-container#0;n#template#0;n#!!top" />
+              </folding>
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/ChartController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,11 +175,35 @@
               <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="39" />
               <folding>
                 <element signature="e#34#63#0#PHP" expanded="true" />
+=======
+      <file leaf-file-name="PersonneController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/PersonneController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+              <folding>
+                <element signature="e#34#66#0#PHP" expanded="true" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="PersonneManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Manager/PersonneManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+              <folding>
+                <element signature="e#115#139#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -149,16 +254,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/src/Services/AcmeTopic.php" />
+        <option value="$PROJECT_DIR$/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/templates/custom/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Entity/Custom.php" />
+        <option value="$PROJECT_DIR$/src/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/assets/vue/services/websocket.js" />
+        <option value="$PROJECT_DIR$/config/packages/gos_web_socket.yaml" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/login/Login.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/login/FormLogin.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/components/AppBack.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/components/AppBack/MainFooter.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/components/AppBack/MainFooterComponent.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/components/AppBack/FooterComponent.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/components/AppBack/NavbarComponent.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/views/back/components/AppBack/AppBack.vue" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
         <option value="$PROJECT_DIR$/assets/vue/api/user.js" />
-        <option value="$PROJECT_DIR$/assets/vue/App.vue" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/button/Buttons.vue" />
         <option value="$PROJECT_DIR$/assets/vue/store/user.js" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/formCustom.vue" />
         <option value="$PROJECT_DIR$/assets/vue/api/userApi.js" />
         <option value="$PROJECT_DIR$/src/Entity/Personne.php" />
         <option value="$PROJECT_DIR$/src/Manager/BaseManager.php" />
-        <option value="$PROJECT_DIR$/config/api_platform/personne.yaml" />
-        <option value="$PROJECT_DIR$/src/Controller/PersonneController.php" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/Personne/Personne.vue" />
         <option value="$PROJECT_DIR$/assets/vue/api/PersonneApi.js" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/AppBack/SidebarFixedComponent.vue" />
@@ -170,18 +290,16 @@
         <option value="$PROJECT_DIR$/src/Manager/PersonneManager.php" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/personne/TablePersonne.vue" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/personne/MyVuetable.vue" />
-        <option value="$PROJECT_DIR$/assets/vue/store/personne.js" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/personne/FormPersonne.vue" />
-        <option value="$PROJECT_DIR$/assets/vue/api/personneApi.js" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/Custom.vue" />
-        <option value="$PROJECT_DIR$/assets/vue/services/axiosService.js" />
         <option value="$PROJECT_DIR$/src/Repository/CustomRepository.php" />
-        <option value="$PROJECT_DIR$/assets/vue/api/customApi.js" />
-        <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue" />
-        <option value="$PROJECT_DIR$/src/Controller/CustomController.php" />
-        <option value="$PROJECT_DIR$/src/Manager/CustomManager.php" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/ListCustom.vue" />
+        <option value="$PROJECT_DIR$/assets/vue/api/customApi.js" />
+        <option value="$PROJECT_DIR$/src/Controller/CustomController.php" />
+        <option value="$PROJECT_DIR$/config/api_platform/custom.yaml" />
+        <option value="$PROJECT_DIR$/src/Manager/CustomManager.php" />
         <option value="$PROJECT_DIR$/assets/vue/store/custom.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/Dashboard.vue" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/dashboard/CascadingAdminCard.vue" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/dashboard/BarChart.vue" />
@@ -200,8 +318,34 @@
         <option value="$PROJECT_DIR$/assets/vue/api/chartApi.js" />
         <option value="$PROJECT_DIR$/assets/vue/store/chart.js" />
         <option value="$PROJECT_DIR$/assets/vue/views/back/components/dashboard/DoughnutChart.vue" />
+=======
+        <option value="$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue" />
+        <option value="$PROJECT_DIR$/config/api_platform/personne.yaml" />
+        <option value="$PROJECT_DIR$/src/Controller/PersonneController.php" />
+        <option value="$PROJECT_DIR$/assets/vue/api/personneApi.js" />
+        <option value="$PROJECT_DIR$/assets/vue/store/personne.js" />
+        <option value="$PROJECT_DIR$/assets/vue/services/axiosService.js" />
+        <option value="$PROJECT_DIR$/src/DataFixtures/CustomFixtures.php" />
+        <option value="$PROJECT_DIR$/assets/vue/App.vue" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -364,6 +508,7 @@
             <path>
               <item name="vuejsymf" type="b2602c69:ProjectViewProjectNode" />
               <item name="vuejsymf" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -426,20 +571,9 @@
             <path>
               <item name="vuejsymf" type="b2602c69:ProjectViewProjectNode" />
               <item name="vuejsymf" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vuejsymf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vuejsymf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vuejsymf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vuejsymf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -449,7 +583,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../afm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -528,21 +662,31 @@
       <workItem from="1559114424874" duration="14708000" />
       <workItem from="1559287929524" duration="24920000" />
       <workItem from="1559372020201" duration="28660000" />
+<<<<<<< HEAD
       <workItem from="1559632066265" duration="29276000" />
       <workItem from="1559809618949" duration="602000" />
       <workItem from="1559813470087" duration="3205000" />
       <workItem from="1559818812901" duration="4626000" />
       <workItem from="1559830174169" duration="8410000" />
+=======
+      <workItem from="1559632066265" duration="28872000" />
+      <workItem from="1559673622937" duration="9160000" />
+      <workItem from="1559718415497" duration="3867000" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="347771000" />
+=======
+    <option name="totallyTimeSpent" value="343551000" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2019154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -553,23 +697,96 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+=======
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20092379" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/AppBack/NavbarComponent.vue" />
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/AppBack/FooterComponent.vue" />
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/AppBack/AppBack.vue" />
+    <entry file="file://$PROJECT_DIR$/assets/vue/store/mdb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/button/Buttons.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/button/ModalLeftComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/api/userApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Personne.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
+          <folding>
+            <element signature="e#30#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/JsonResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="41" column="79" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
     <entry file="file://$PROJECT_DIR$/vendor/symfony/serializer/SerializerInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -577,6 +794,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/vue/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -593,6 +811,21 @@
           <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Manager/BaseManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="175" column="84" selection-start-line="175" selection-start-column="84" selection-end-line="175" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
           </folding>
         </state>
       </provider>
@@ -610,9 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
-          <folding>
-            <element signature="e#115#155#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -634,12 +864,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="24" column="16" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/assets/vue/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
     <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/Tables.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -647,60 +884,13 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Manager/PersonneManager.php">
+=======
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/Dashboard.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="108" column="17" selection-start-line="108" selection-start-column="13" selection-end-line="108" selection-end-column="17" />
-          <folding>
-            <element signature="e#115#139#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/Personne.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/store/personne.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/api/personneApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/MyVuetable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="111" column="29" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
-          <folding>
-            <element signature="e#1317#1350#0" expanded="true" />
-            <element signature="e#1707#2399#0" />
-            <element signature="e#1729#1938#0" />
-            <element signature="e#1960#2118#0" />
-            <element signature="e#2172#2350#0" />
-            <element signature="e#2428#2507#0" />
-            <element signature="e#2530#3567#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/FormPersonne.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
-          <folding>
-            <element signature="n#form#0;n#mdb-card-body#0;n#mdb-card#0;n#mdb-col#0;n#mdb-row#0;n#mdb-container#0;n#template#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="110" column="56" selection-start-line="110" selection-start-column="56" selection-end-line="110" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -712,19 +902,70 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bootstrap-vue/src/components/table/index.js">
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/services/axiosService.js">
+    <entry file="file://$PROJECT_DIR$/public/build/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="598" column="4" selection-start-line="598" selection-start-column="4" selection-end-line="598" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/Custom.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/api/customApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/api_platform/custom.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CustomController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Manager/CustomManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="68" column="63" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/CustomRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/ListCustom.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="88" column="49" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/build/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -776,20 +1017,70 @@
           <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
           <folding>
             <element signature="e#111#133#0#PHP" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/config/api_platform/personne.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/FormCustom.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/Personne.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/api/personneApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/TablePersonne.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/MyVuetable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="146" column="64" selection-start-line="146" selection-start-column="64" selection-end-line="146" selection-end-column="64" />
+          <folding>
+            <element signature="e#1660#2352#0" />
+            <element signature="e#2435#2514#0" />
+            <element signature="e#2537#3574#0" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CustomController.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/PersonneController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
+<<<<<<< HEAD
           <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+=======
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
           <folding>
-            <element signature="e#34#64#0#PHP" expanded="true" />
+            <element signature="e#34#66#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/tables.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -854,10 +1145,19 @@
           <caret line="222" column="55" selection-start-line="222" selection-start-column="55" selection-end-line="222" selection-end-column="55" />
           <folding>
             <element signature="n#mdb-col#0;n#mdb-row#0;n#section#0;n#template#0;n#!!top" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Manager/PersonneManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding>
+            <element signature="e#115#139#0#PHP" expanded="true" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/dashboard/AdminCard.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -867,10 +1167,19 @@
             <element signature="n#mdb-col#1;n#mdb-row#0;n#section#0;n#template#0;n#!!top" />
             <element signature="n#mdb-col#2;n#mdb-row#0;n#section#0;n#template#0;n#!!top" />
             <element signature="n#mdb-col#3;n#mdb-row#0;n#section#0;n#template#0;n#!!top" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/personne/FormPersonne.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+          <folding>
+            <element signature="n#form#0;n#mdb-card-body#0;n#mdb-card#0;n#mdb-col#0;n#mdb-row#0;n#mdb-container#0;n#template#0;n#!!top" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/dashboard/SearchDashboard.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -884,12 +1193,49 @@
           <caret line="18" column="37" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="37" />
           <folding>
             <element signature="e#34#66#0#PHP" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/vue/store/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/store/personne.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/services/websocket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Custom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+          <folding>
+            <element signature="e#30#62#0#PHP" expanded="true" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/vue/views/back/components/custom/ListCustom.vue">
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/UserFixtures.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DataFixtures/CustomFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="255">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
@@ -901,10 +1247,17 @@
           <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+=======
+        <state relative-caret-position="885">
+          <caret line="60" column="41" selection-start-line="60" selection-start-column="41" selection-end-line="60" selection-end-column="41" />
+          <folding>
+            <element signature="e#36#58#0#PHP" expanded="true" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/vue/api/customApi.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1001,6 +1354,32 @@
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding>
             <element signature="e#360#450#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/vue/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#169#218#0" expanded="true" />
+            <element signature="e#368#408#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/services/axiosService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/vue/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="65" column="26" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="26" />
+          <folding>
+            <element signature="e#235#279#0" expanded="true" />
+>>>>>>> 617ac9831d13340f6dbacdf9c0490f4a3609d3c5
           </folding>
         </state>
       </provider>

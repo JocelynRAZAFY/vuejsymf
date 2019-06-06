@@ -8,6 +8,6 @@ export default {
         return axiosService.get('/api/back/custom/list')
     },
     updateCustom({param}){
-        return axiosService.post('/api/back/custom/edit',param)
+        return axiosService.post('/api/back/custom/update',param)
     }
 }

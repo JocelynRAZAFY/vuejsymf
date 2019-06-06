@@ -59,8 +59,12 @@ class CustomManager extends BaseManager
         $this->save($custom);
 
         if($add){
-            $customs = $this->customsPagination(1);
-            return $this->success($customs);
+            $customs = $this->customsPagination(0);
+            $res = [
+                'rows' => $customs,
+                'totalRows' => count($this->customRepository->findAll())
+            ];
+            return $this->success($res);
         }else{
             return $this->success($this->customRepository->transform($custom));
         }

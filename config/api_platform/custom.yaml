@@ -5,10 +5,37 @@ resources:
         route_name: 'list_custom'
         controller: 'App\Controller\CustomController'
         swagger_context:
-          summary: récupérer les informations de l'utilisateur connecté
+          summary: get All custom
           responses:
             200:
-              description: Informations de l'utilisateur connecté
+              description: get All custom
+              schema:
+                type: object
+                properties:
+                  account_type:
+                    type: string
+                    description: type de compte
+
+      pagination_custom:
+        route_name: 'pagination_custom'
+        controller: 'App\Controller\CustomController'
+        swagger_context:
+          parameters:
+            - in: body
+              name: body
+              schema:
+                type: object
+                properties:
+                  firstResult:
+                    type: integer
+                    description: firstResult
+                  perPage:
+                    type: integer
+                    description: perPage
+          summary: get All custom by pagination
+          responses:
+            200:
+              description: get All custom by pagination
               schema:
                 type: object
                 properties:
@@ -48,7 +75,7 @@ resources:
                     description: result
 
       edit_custom:
-        route_name: 'edit_custom'
+        route_name: 'update_custom'
         controller: 'App\Controller\CustomController'
         swagger_context:
           summary:  edit custom

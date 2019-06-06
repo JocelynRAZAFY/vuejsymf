@@ -14,9 +14,9 @@ export default {
         'SET_PERSONNES' (state, personnes){
             state.personnes = personnes
         },
-        'UPDATE_PERSONNE' (state, personne){
+        'UPDATE_PERSONNE' (state,personne){
             let add = true
-            state.personnes.forEach(function (perso) {
+            state.personnes.data.forEach(function (perso) {
                 if(perso.id == personne.id){
                     add = false
                     perso.lastName = personne.lastName
@@ -29,8 +29,9 @@ export default {
             })
 
             if(add){
-                state.personnes.push(personne)
+                state.personnes.data.push(personne)
             }
+
         },
         'SET_PERSONNE' (state, personne){
             state.personne = personne

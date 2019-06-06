@@ -1,7 +1,6 @@
 <template>
     <div>
         <div v-if="hasToken">
-            {{ getInformation }}
             <app-back></app-back>
         </div>
         <div v-else>
@@ -62,6 +61,9 @@
         },
         beforeMount () {
 
+        },
+        watch:{
+            getInformation(){}
         }
     }
 </script>
