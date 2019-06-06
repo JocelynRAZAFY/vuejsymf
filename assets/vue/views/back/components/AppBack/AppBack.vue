@@ -19,7 +19,7 @@
 
 <script>
     import { waves } from 'mdbvue'
-    import Dashboard from '../Dashboard'
+    import Dashboard from '../dashboard/Dashboard'
     import Profile from '../Profile'
     import SidebarFixedComponent from './SidebarFixedComponent'
     import NavbarComponent from './NavbarComponent'
