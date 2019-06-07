@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import store from '../store/index'
 import Dashboard from '../views/back/components/dashboard/Dashboard'
-import Profile from '../views/back/components/Profile'
+import Profile from '../views/back/components/profile/Profile'
 import Tables from '../views/back/components/Tables'
 import Maps from '../views/back/components/Maps'
 import BadGateway from '../views/back/components/BadGateway'
@@ -10,6 +10,7 @@ import Login from '../views/back/login/Login'
 import Buttons from '../views/back/components/button/Buttons'
 import Custom from '../views/back/components/custom/Custom'
 import Personne from '../views/back/components/personne/Personne'
+import Articles from '../views/back/components/articles/Articles'
 
 Vue.use(Router)
 
@@ -37,10 +38,10 @@ let router = new Router({
             component: Profile
         },
         {
-            path: '/tables',
-            name: 'Tables',
+            path: '/articles',
+            name: 'Articles',
             props: { page: 3 },
-            component: Tables
+            component: Articles
         },
         {
             path: '/maps',

@@ -5,6 +5,7 @@
     <!--<bar-chart></bar-chart>-->
     <!--<table-dashboard></table-dashboard>-->
     <chart-dashboard></chart-dashboard>
+    <dynamic-from></dynamic-from>
     <!--<google-map-dashboard></google-map-dashboard>-->
     <!--<admin-card></admin-card>-->
   </section>
@@ -18,6 +19,7 @@ import ChartDashboard from './ChartDashboard'
 import GoogleMapDashboard from './GoogleMapDashboard'
 import AdminCard from './AdminCard'
 import SearchDashboard from './SearchDashboard'
+import DynamicFrom from './DynamicFrom'
 
 export default {
   name: 'Dashboard',
@@ -28,7 +30,8 @@ export default {
     ChartDashboard,
     GoogleMapDashboard,
     AdminCard,
-    SearchDashboard
+    SearchDashboard,
+    DynamicFrom
   },
     data () {
       return {

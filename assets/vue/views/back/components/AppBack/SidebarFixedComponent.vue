@@ -9,12 +9,12 @@
             </router-link>
             <router-link to="/profile" @click.native="activeItem = 2">
                 <mdb-list-group-item :action="true" :class="activeItem === 2 && 'active'">
-                    <mdb-icon icon="user" class="mr-3"/>Profile
+                    <mdb-icon icon="user" class="mr-3"/>Formulaire
                 </mdb-list-group-item>
             </router-link>
-            <router-link to="/tables"  @click.native="activeItem = 3">
+            <router-link to="/articles"  @click.native="activeItem = 3">
                 <mdb-list-group-item :action="true" :class="activeItem === 3 && 'active'">
-                    <mdb-icon icon="table" class="mr-3"/>Tables
+                    <mdb-icon icon="table" class="mr-3"/>Articles
                 </mdb-list-group-item>
             </router-link>
             <router-link to="/maps" @click.native="activeItem = 4">

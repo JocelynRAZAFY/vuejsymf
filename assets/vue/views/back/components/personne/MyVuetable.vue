@@ -15,7 +15,8 @@
             <template slot="actions" slot-scope="props">
                 <div class="table-button-container">
                     <button class="btn btn-warning px-3" @click="editRow(props.rowData)" aria-hidden="true">
-                        <i class="far fa-edit"></i></button>&nbsp;&nbsp;
+                        <i class="far fa-edit"></i>
+                    </button>&nbsp;&nbsp;
                     <button class="btn btn-danger px-3" @click="deleteRow(props.rowData)" aria-hidden="true">
                         <i class="far fa-trash-alt"></i></button>&nbsp;&nbsp;
                 </div>
