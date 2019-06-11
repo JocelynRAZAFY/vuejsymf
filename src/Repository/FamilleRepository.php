@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Famille;
+use App\Services\ToolsService;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
@@ -14,8 +15,13 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
  */
 class FamilleRepository extends ServiceEntityRepository
 {
-    public function __construct(RegistryInterface $registry)
+    private $toolsService;
+
+    public function __construct(
+        RegistryInterface $registry,
+        ToolsService $toolsService)
     {
+        $this->toolsService = $toolsService;
         parent::__construct($registry, Famille::class);
     }
 
@@ -24,6 +30,7 @@ class FamilleRepository extends ServiceEntityRepository
         return [
             'id' => $famille->getId(),
             'label' => $famille->getLabel(),
+            'photo' => $this->toolsService->imageToBase64($famille->getPhoto()),
         ];
     }
 
@@ -33,6 +40,8 @@ class FamilleRepository extends ServiceEntityRepository
         foreach ($familles as $famille){
             $arrayFamille[] = $this->transform($famille);
         }
+
+        return $arrayFamille;
     }
 
     // /**

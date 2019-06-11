@@ -1,65 +1,82 @@
 <template>
     <div>
-        <form class="needs-validation" novalidate @submit="validFamille">
+
             <div class="form-row">
-                <div class="row">
-                    <label for="validationCustom01">Label</label>
-                    <input
-                            type="text"
-                            class="form-control"
-                            id="label"
-                            placeholder="Label"
-                            v-model="famille.label"
-                            required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
-                <div class="row">
-                    <b-form-file
-                            v-model="famille.photo"
-                            :state="Boolean(file)"
-                            placeholder="Choose a file..."
-                            drop-placeholder="Drop file here..."
-                    ></b-form-file>
+                <label for="validationCustom01">Label</label>
+                <input
+                        type="text"
+                        class="form-control"
+                        id="label"
+                        placeholder="Label"
+                        v-model="familleForm.label"
+                        required>
+                <div class="valid-feedback">
+                    Looks good!
                 </div>
             </div>
+            <image-crop @cropImg="cropImg($event)" :photo="image"></image-crop>
             <div class="form-row">
                 <div class="col-md-4 mb-3"></div>
                 <div class="col-md-4 mb-3">
-                    <button type="submit" class="btn btn-outline-success btn-rounded btn-block waves-effect">
+                    <button type="button"
+                            class="btn btn-outline-success btn-rounded btn-block waves-effect"
+                        @click="validFamille">
                         <i class="fas fa-save pr-2" aria-hidden="true"></i>Save
                     </button>
                 </div>
                 <div class="col-md-4 mb-3"></div>
             </div>
-
-        </form>
     </div>
 </template>
 
 <script>
+    import ImageCrop from './ImageCrop'
+    import { mapActions, mapGetters } from 'vuex'
     export default {
         name: "FormFamille",
+        components:{
+            ImageCrop
+        },
         data(){
             return {
-                famille:{
+                familleForm:{
+                    id: 0,
                     label: '',
                     photo: ''
-                }
+                },
+                image: ''
+            }
+        },
+        computed:{
+            ...mapGetters('famille',['famille']),
+            getFamille(){
+                this.familleForm.id = this.famille.id
+                this.familleForm.label = this.famille.label
+                this.image = this.famille.photo
             }
         },
         methods:{
+            ...mapActions('famille',['updateFamilles']),
             validFamille(e){
                 e.preventDefault()
-
+                this.updateFamilles({id: this.familleForm.id, label: this.familleForm.label, photo: this.familleForm.photo})
+            },
+            cropImg(e){
+                this.familleForm.photo = e
             }
+        },
+        watch:{
+            getFamille(){}
         }
     }
 </script>
 
 <style scoped>
     div.row{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    div.form-row{
         margin-top: 1em;
         margin-bottom: 1em;
     }

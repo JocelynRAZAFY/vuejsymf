@@ -23,10 +23,18 @@ class FamilleController extends AbstractController
     }
 
     /**
-     * @Route("/api/back/famille/update", name="update_famille")
+     * @Route("/api/back/famille/update", name="update_famille", methods={"POST"})
      */
     public function updateFamille()
     {
         return $this->familleManager->updateFamille();
+    }
+
+    /**
+     * @Route("/api/back/famille/all", name="all_famille", methods={"GET"})
+     */
+    public function allFamille()
+    {
+        return $this->familleManager->allFamille();
     }
 }

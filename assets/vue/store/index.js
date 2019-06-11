@@ -6,6 +6,7 @@ import MdbModule from './mdb'
 import CustomModule from './custom'
 import PersonneModule from './personne'
 import ChartModule from './chart'
+import FamilleModule from './famille'
 
 Vue.use(Vuex)
 export default new Vuex.Store({
@@ -15,6 +16,7 @@ export default new Vuex.Store({
         mdb: MdbModule,
         custom: CustomModule,
         personne: PersonneModule,
-        chart: ChartModule
+        chart: ChartModule,
+        famille: FamilleModule
     },
 })
