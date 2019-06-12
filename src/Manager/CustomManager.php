@@ -7,8 +7,6 @@
  */
 
 namespace App\Manager;
-
-
 use App\Entity\Custom;
 use App\Repository\CustomRepository;
 use Doctrine\ORM\EntityManagerInterface;

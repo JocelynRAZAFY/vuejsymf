@@ -31,10 +31,26 @@ class FamilleController extends AbstractController
     }
 
     /**
-     * @Route("/api/back/famille/all", name="all_famille", methods={"GET"})
+     * @Route("/api/back/famille/all", name="all_famille", methods={"POST"})
      */
     public function allFamille()
     {
-        return $this->familleManager->allFamille();
+        return $this->familleManager->allFamillePagination();
+    }
+
+    /**
+     * @Route("/api/back/famille/search", name="search_famille", methods={"POST"})
+     */
+    public function searchFamille()
+    {
+        return $this->familleManager->allFamillePagination();
+    }
+
+    /**
+     * @Route("/api/back/famille/remove", name="remove_famille", methods={"POST"})
+     */
+    public function removeFamille()
+    {
+        return $this->familleManager->removeFamille();
     }
 }

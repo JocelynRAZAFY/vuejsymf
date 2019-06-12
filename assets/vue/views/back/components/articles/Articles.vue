@@ -9,6 +9,18 @@
                     <mdb-card-body>
                         <div class="row">
                             <div class="col-md-6">
+                                <search></search>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button"
+                                        class="btn btn-primary px-3"
+                                        @click="addFamille()">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
                                 <list-famille></list-famille>
                             </div>
                             <div class="col-md-6">
@@ -36,8 +48,10 @@
 
 <script>
     import { mdbRow, mdbCol, mdbCard, mdbView, mdbCardBody, mdbTbl } from 'mdbvue'
+    import {mapMutations} from 'vuex'
     import ListFamille from './ListFamille'
     import FormFamille from './FormFamille'
+    import Search from '../component/Search'
 
     export default {
         name: "Articles",
@@ -49,7 +63,14 @@
             mdbCardBody,
             mdbTbl,
             ListFamille,
-            FormFamille
+            FormFamille,
+            Search
+        },
+        methods:{
+            ...mapMutations('famille',['SET_FAMILLE']),
+            addFamille(){
+                this.SET_FAMILLE({id: 0, label: '', photo: ''})
+            }
         }
     }
 </script>

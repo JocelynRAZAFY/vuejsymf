@@ -4,7 +4,13 @@ export default {
     updateFamille(param){
         return axiosService.post('/api/back/famille/update',param)
     },
-    getAllFamille(){
-        return axiosService.get('/api/back/famille/all')
+    getAllFamille(param){
+        return axiosService.post('/api/back/famille/all',param)
+    },
+    searchFamille(param){
+        return axiosService.post('/api/back/famille/search',param)
+    },
+    removeFamille(param){
+        return axiosService.post('/api/back/famille/remove',param)
     }
 }

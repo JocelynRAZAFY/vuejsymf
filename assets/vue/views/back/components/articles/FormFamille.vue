@@ -1,6 +1,5 @@
 <template>
     <div>
-
             <div class="form-row">
                 <label for="validationCustom01">Label</label>
                 <input
@@ -31,7 +30,7 @@
 
 <script>
     import ImageCrop from './ImageCrop'
-    import { mapActions, mapGetters } from 'vuex'
+    import { mapActions, mapGetters, mapMutations } from 'vuex'
     export default {
         name: "FormFamille",
         components:{
@@ -57,9 +56,12 @@
         },
         methods:{
             ...mapActions('famille',['updateFamilles']),
+            ...mapMutations('famille',['SET_FAMILLE']),
             validFamille(e){
                 e.preventDefault()
                 this.updateFamilles({id: this.familleForm.id, label: this.familleForm.label, photo: this.familleForm.photo})
+                this.SET_FAMILLE({id: 0, label: '', photo: ''})
+                this.image = ''
             },
             cropImg(e){
                 this.familleForm.photo = e

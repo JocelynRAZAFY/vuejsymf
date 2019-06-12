@@ -44,6 +44,34 @@ class FamilleRepository extends ServiceEntityRepository
         return $arrayFamille;
     }
 
+    /**
+     * @param $firstResult
+     * @param $perPage
+     * @param null $search
+     * @return mixed
+     */
+    public function getFamillePagination($firstResult,$perPage,$search)
+    {
+        $qb = $this->createQueryBuilder('f');
+        if($search){
+            $qb->andWhere('f.label LIKE :search')
+                ->setParameter('search', '%'.$search.'%');
+        }
+        $qb->orderBy('f.label', 'ASC')
+            ->setFirstResult($firstResult)
+            ->setMaxResults($perPage);
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function countFamilleBySearch($search)
+    {
+        $qb = $this->createQueryBuilder('f');
+        $qb->andWhere('f.label LIKE :search')
+            ->setParameter('search', '%'.$search.'%');
+
+        return count($qb->getQuery()->getResult());
+    }
     // /**
     //  * @return Famille[] Returns an array of Famille objects
     //  */

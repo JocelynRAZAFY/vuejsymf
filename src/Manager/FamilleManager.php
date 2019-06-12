@@ -66,8 +66,10 @@ class FamilleManager extends BaseManager
         $famille = $this->familleRepository->find($this->data->id);
         if(!$famille){
             $famille = new Famille();
+            $action = 'add';
         }else{
             $oldPhoto = $famille->getPhoto();
+            $action = 'edit';
         }
 
         // image venant du crop
@@ -81,7 +83,11 @@ class FamilleManager extends BaseManager
         $famille->setLabel($this->data->label);
         $this->save($famille);
 
-        return $this->success($this->familleRepository->transform($famille));
+        $res = [
+            'action' => $action,
+            'famille' => $this->familleRepository->transform($famille)
+        ];
+        return $this->success($res);
     }
 
     /**
@@ -91,5 +97,55 @@ class FamilleManager extends BaseManager
     {
         $familles = $this->familleRepository->findBy([],['label' => 'ASC']);
         return $this->success($this->familleRepository->transformAll($familles));
+    }
+
+    /**
+     * @return \Symfony\Component\HttpFoundation\JsonResponse
+     */
+    public function allFamillePagination()
+    {
+        if($this->data->firstResult - 1 == 0){
+            $firstResult = 0;
+        }else{
+            $firstResult = ($this->data->firstResult - 1) * $this->data->perPage;
+        }
+
+        if(isset($this->data->search) && $this->data->search != ''){
+            $search = $this->data->search;
+            $totalRows = $this->familleRepository->countFamilleBySearch($search);
+        }else{
+            $search = null;
+            $totalRows = count($this->familleRepository->findAll());
+        }
+
+        $familles = $this->famillePagination($firstResult,$this->data->perPage,$search);
+
+        $res = [
+            'rows' => $familles,
+            'totalRows' => $totalRows,
+        ];
+        return $this->success($res);
+    }
+
+    /**
+     * @param $firstResult
+     * @param $perPage
+     * @param $search
+     * @return array
+     */
+    private function famillePagination($firstResult,$perPage,$search)
+    {
+        $customs = $this->familleRepository->getFamillePagination($firstResult,$perPage,$search);
+        return $this->familleRepository->transformAll($customs);
+    }
+
+    public function removeFamille()
+    {
+        $famille = $this->familleRepository->find($this->data->id);
+        if($famille){
+            $this->remove($famille);
+        }
+
+        return $this->success('Ligne supprimer');
     }
 }

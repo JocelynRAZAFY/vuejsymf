@@ -61,6 +61,8 @@
     import VueCropper from 'vue-cropperjs';
     import 'cropperjs/dist/cropper.css';
     import { mdbModal, mdbModalHeader, mdbModalTitle, mdbModalBody, mdbModalFooter, mdbBtn } from 'mdbvue';
+    import { mapGetters } from 'vuex'
+
     export default {
         name: "ImageCrop",
         components:{
@@ -118,7 +120,9 @@
 
         },
         watch:{
-            showImage(){}
+            showImage(){
+                this.cropImg = this.photo
+            }
         }
     }
 </script>

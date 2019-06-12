@@ -36,7 +36,6 @@
             ></b-pagination>
 
             <p class="mt-3">Current Page: {{ currentPage }}</p>
-
         </div>
     </div>
 
