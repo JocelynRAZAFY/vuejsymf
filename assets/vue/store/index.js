@@ -7,6 +7,7 @@ import CustomModule from './custom'
 import PersonneModule from './personne'
 import ChartModule from './chart'
 import FamilleModule from './famille'
+import ArticleModule from './article'
 
 Vue.use(Vuex)
 export default new Vuex.Store({
@@ -17,6 +18,7 @@ export default new Vuex.Store({
         custom: CustomModule,
         personne: PersonneModule,
         chart: ChartModule,
-        famille: FamilleModule
+        famille: FamilleModule,
+        article: ArticleModule
     },
 })

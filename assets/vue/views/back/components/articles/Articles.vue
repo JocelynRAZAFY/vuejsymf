@@ -38,7 +38,10 @@
                         <h4 class="h4-responsive text-white">Article</h4>
                     </mdb-view>
                     <mdb-card-body>
-
+                        <div id="table-wrapper" class="ui container">
+                            <liste-article></liste-article>
+                        </div>
+                        <form-article></form-article>
                     </mdb-card-body>
                 </mdb-card>
             </mdb-col>
@@ -52,6 +55,8 @@
     import ListFamille from './ListFamille'
     import FormFamille from './FormFamille'
     import Search from '../component/Search'
+    import ListeArticle from './ListeArticle'
+    import FormArticle from './FormArticle'
 
     export default {
         name: "Articles",
@@ -64,7 +69,9 @@
             mdbTbl,
             ListFamille,
             FormFamille,
-            Search
+            Search,
+            ListeArticle,
+            FormArticle
         },
         methods:{
             ...mapMutations('famille',['SET_FAMILLE']),

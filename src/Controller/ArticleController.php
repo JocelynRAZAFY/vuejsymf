@@ -2,18 +2,32 @@
 
 namespace App\Controller;
 
+use App\Manager\ArticleManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 class ArticleController extends AbstractController
 {
-    /**
-     * @Route("/article", name="article")
-     */
-    public function index()
+    private $articleManager;
+
+    public function __construct(ArticleManager $articleManager)
     {
-        return $this->render('article/index.html.twig', [
-            'controller_name' => 'ArticleController',
-        ]);
+        $this->articleManager = $articleManager;
+    }
+
+    /**
+     * @Route("/api/back/article/update", name="update_article")
+     */
+    public function updateArticle()
+    {
+        return $this->articleManager->updateArticle();
+    }
+
+    /**
+     * @Route("/api/back/article/search", name="search_article", methods={"POST"})
+     */
+    public function searchArticle()
+    {
+        return $this->articleManager->allArticlePagination();
     }
 }

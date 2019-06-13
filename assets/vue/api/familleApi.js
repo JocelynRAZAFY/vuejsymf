@@ -5,7 +5,7 @@ export default {
         return axiosService.post('/api/back/famille/update',param)
     },
     getAllFamille(param){
-        return axiosService.post('/api/back/famille/all',param)
+        return axiosService.get('/api/back/famille/all')
     },
     searchFamille(param){
         return axiosService.post('/api/back/famille/search',param)

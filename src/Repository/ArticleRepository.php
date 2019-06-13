@@ -19,6 +19,61 @@ class ArticleRepository extends ServiceEntityRepository
         parent::__construct($registry, Article::class);
     }
 
+    /**
+     * @param Article $article
+     * @return array
+     */
+    public function transform(Article $article)
+    {
+        return [
+            'id' => $article->getId(),
+            'code' => $article->getCode(),
+            'label' => $article->getLabel(),
+            'description' => $article->getDescription(),
+            'price' => $article->getPrice(),
+            'famille' => [
+                'id' => $article->getFamille()->getId(),
+                'label' => $article->getFamille()->getLabel()
+            ],
+        ];
+    }
+
+    /**
+     * @param $articles
+     * @return array
+     */
+    public function transformAll($articles)
+    {
+        $arrayArticle = [];
+        foreach ($articles as $article){
+            $arrayArticle[] = $this->transform($article);
+        }
+
+        return $arrayArticle;
+    }
+
+    public function getArticlePagination($firstResult,$perPage,$search)
+    {
+        $qb = $this->createQueryBuilder('a');
+        if($search){
+            $qb->andWhere('a.label LIKE :search')
+                ->setParameter('search', '%'.$search.'%');
+        }
+        $qb->orderBy('a.label', 'ASC')
+            ->setFirstResult($firstResult)
+            ->setMaxResults($perPage);
+
+        return $qb->getQuery()->getResult();
+    }
+
+    public function countArticleBySearch($search)
+    {
+        $qb = $this->createQueryBuilder('a');
+        $qb->andWhere('a.label LIKE :search')
+            ->setParameter('search', '%'.$search.'%');
+
+        return count($qb->getQuery()->getResult());
+    }
     // /**
     //  * @return Article[] Returns an array of Article objects
     //  */

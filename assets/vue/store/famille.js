@@ -5,6 +5,7 @@ export default {
     state: {
         familles: [],
         famille: {},
+        familleAll: [],
         totalRows: 0,
         search: null,
         status: false
@@ -12,6 +13,9 @@ export default {
     getters: {
         familles(state){
             return state.familles
+        },
+        familleAll(state){
+            return state.familleAll
         },
         famille(state){
             return state.famille
@@ -27,6 +31,9 @@ export default {
         'SET_FAMILLES' (state,data){
             state.familles = data.rows
             state.totalRows = data.totalRows
+        },
+        'SET_FAMILLE_ALL' (state,data){
+            state.familleAll = data
         },
         'UPDATE_FAMILLE' (state,famille){
             var add = true
@@ -64,10 +71,11 @@ export default {
 
             }
         },
-        async getAllFamille({commit},{firstResult,perPage}){
+        async getAllFamille({commit}){
             try {
-                const res = await FamilleAPI.getAllFamille({firstResult,perPage})
-                commit('SET_FAMILLES',res.data.data)
+                const res = await FamilleAPI.getAllFamille()
+                // commit('SET_FAMILLES',res.data.data)
+                commit('SET_FAMILLE_ALL',res.data.data)
             }catch (e) {
 
             }

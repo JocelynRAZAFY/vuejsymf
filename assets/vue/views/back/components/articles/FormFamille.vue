@@ -60,11 +60,14 @@
             validFamille(e){
                 e.preventDefault()
                 this.updateFamilles({id: this.familleForm.id, label: this.familleForm.label, photo: this.familleForm.photo})
-                this.SET_FAMILLE({id: 0, label: '', photo: ''})
+                this.addFamille()
                 this.image = ''
             },
             cropImg(e){
                 this.familleForm.photo = e
+            },
+            addFamille(){
+                this.SET_FAMILLE({id: 0, label: '', photo: ''})
             }
         },
         watch:{

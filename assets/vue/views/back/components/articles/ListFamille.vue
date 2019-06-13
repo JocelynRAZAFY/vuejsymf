@@ -78,6 +78,7 @@
                 await this.removeFamille({id: famille.id})
                 this.currentPage = 1
                 this.perPage = 3
+                this.addFamille()
             }
         },
         watch:{

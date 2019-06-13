@@ -38,10 +38,9 @@
     import { mapGetters, mapActions, mapState } from 'vuex'
     import _ from "lodash";
 
-    export default
-    {
-        name: "MyVuetable",
-        components: {
+    export default {
+        name: "ListeArticle",
+        components:{
             Vuetable,
             VuetablePagination
         },
@@ -49,30 +48,43 @@
             return {
                 fields: [
                     {
-                        name: 'lastName',
-                        title: '<span class="fas fa-user-astronaut"></span> Last Name',
-                        sortField: 'lastName'
+                        name: 'code',
+                        title: '<span class="fas fa-barcode"></span> Code',
+                        sortField: 'code'
                     },
                     {
-                        name: 'firstName',
-                        title: '<span class="fas fa-user-astronaut"></span> First Name',
-                        sortField: 'firstName'
+                        name: 'label',
+                        title: '<span class="fas fa-tag"></span> Label',
+                        sortField: 'label'
                     },
                     {
-                        name: 'birthday',
-                        title: ' <span class="fas fa-calendar-alt"></span> Birthday',
+                        name: 'description',
+                        title: '<span class="fas fa-asterisk"></span> Description',
+                        sortField: 'description'
                     },
                     {
-                        name: 'registrationNumber',
-                        title: ' <span class="fas fa-cash-register"></span> Registration',
-                        sortField: 'registrationNumber'
+                        name: 'qteIni',
+                        title: '<span class="fab fa-docker"></span> QteIni',
+                        sortField: 'qteIni'
                     },
-                    'actions'
+                    {
+                        name: 'qte',
+                        title: '<span class="fab fa-docker"></span> Qte',
+                        sortField: 'qte'
+                    },
+                    {
+                        name: 'price',
+                        title: '<span class="fas fa-money-bill-alt"></span> Price',
+                        sortField: 'price'
+                    },
+                    {
+                        name: 'photo',
+                        title: '<span class="fas fa-money-bill-alt"></span> Photo',
+                        sortField: 'photo'
+                    }
                 ],
-                perPage: 3,
-                data: [],
                 sortOrder: [
-                    { field: 'lastName', direction: 'asc' }
+                    { field: 'code', direction: 'asc' }
                 ],
                 css: {
                     table: {
@@ -97,24 +109,22 @@
                         },
                     }
                 },
-                perso: {},
-
+                data: [],
             }
         },
-        computed: {
-            ...mapGetters('personne',['personnes']),
+        computed:{
+            ...mapGetters('article',['articles']),
             localData(){
-                return this.personnes
+                return this.articles
             }
         },
         created(){
-            this.getPersonne()
+            this.getAllArticle()
         },
         methods:{
-            ...mapActions('personne',['getAllPersonne']),
-            ...mapGetters('user',['getToken']),
-            getPersonne(){
-                this.getAllPersonne()
+            ...mapActions('article',['searchArticle']),
+            getAllArticle(){
+                this.searchArticle({firstResult: 1,perPage:50,search: null})
             },
             onPaginationData (paginationData) {
                 this.$refs.pagination.setPaginationData(paginationData)
@@ -162,7 +172,8 @@
                     data: _.slice(local, from, to)
                 };
             }
-        },
+            },
+
         watch:{
             localData(resp){
                 this.data = resp.data
@@ -172,7 +183,6 @@
             }
         }
     }
-
 </script>
 
 <style scoped>

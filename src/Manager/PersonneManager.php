@@ -11,6 +11,7 @@ namespace App\Manager;
 
 use App\Entity\Personne;
 use App\Repository\PersonneRepository;
+use App\Services\ToolsService;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -21,8 +22,27 @@ use Symfony\Component\Serializer\SerializerInterface;
 
 class PersonneManager extends BaseManager
 {
+    /**
+     * @var PersonneRepository
+     */
     private $personneRepository;
 
+    /**
+     * @var ToolsService
+     */
+    private $toolsService;
+
+    /**
+     * PersonneManager constructor.
+     * @param EntityManagerInterface $em
+     * @param ContainerInterface $container
+     * @param RequestStack $requestStack
+     * @param SessionInterface $session
+     * @param LoggerInterface $logger
+     * @param SerializerInterface $serializer
+     * @param PersonneRepository $personneRepository
+     * @param ToolsService $toolsService
+     */
     public function __construct(
         EntityManagerInterface $em,
         ContainerInterface $container,
@@ -30,9 +50,12 @@ class PersonneManager extends BaseManager
         SessionInterface $session,
         LoggerInterface $logger,
         SerializerInterface $serializer,
-        PersonneRepository $personneRepository)
+        PersonneRepository $personneRepository,
+        ToolsService $toolsService)
     {
         $this->personneRepository = $personneRepository;
+        $this->toolsService = $toolsService;
+
         parent::__construct($em, $container, $requestStack, $session, $logger, $serializer);
     }
 
@@ -74,7 +97,7 @@ class PersonneManager extends BaseManager
     {
         $personnes = $this->personneRepository->findAll();
         $personnes = $this->personneRepository->transformAll($personnes);
-        $personnes = $this->getDataFormat($personnes);
+        $personnes = $this->toolsService->getDataFormat($personnes);
 
         return $this->success($personnes);
     }
