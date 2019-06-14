@@ -46,6 +46,11 @@
                 </mdb-card>
             </mdb-col>
         </mdb-row>
+        <mdb-row style="margin-top: 1em">
+            <mdb-col md="12">
+                <editable></editable>
+            </mdb-col>
+        </mdb-row>
     </div>
 </template>
 
@@ -57,6 +62,7 @@
     import Search from '../component/Search'
     import ListeArticle from './ListeArticle'
     import FormArticle from './FormArticle'
+    import Editable from '../component/Editable'
 
     export default {
         name: "Articles",
@@ -71,7 +77,8 @@
             FormFamille,
             Search,
             ListeArticle,
-            FormArticle
+            FormArticle,
+            Editable
         },
         methods:{
             ...mapMutations('famille',['SET_FAMILLE']),

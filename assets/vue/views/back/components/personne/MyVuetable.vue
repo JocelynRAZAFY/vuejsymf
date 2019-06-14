@@ -148,12 +148,12 @@
                         sortOrder[0].direction
                     );
                 }
-
+                console.log(local)
                 pagination = this.$refs.vuetable.makePagination(
                     local.length,
                     this.perPage
                 );
-                console.log('pagination:', pagination)
+
                 let from = pagination.from - 1;
                 let to = from + this.perPage;
 
@@ -166,6 +166,7 @@
         watch:{
             localData(resp){
                 this.data = resp.data
+
             },
             data(newVal, oldVal) {
                 this.$refs.vuetable.refresh();

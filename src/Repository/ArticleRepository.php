@@ -30,11 +30,14 @@ class ArticleRepository extends ServiceEntityRepository
             'code' => $article->getCode(),
             'label' => $article->getLabel(),
             'description' => $article->getDescription(),
-            'price' => $article->getPrice(),
             'famille' => [
                 'id' => $article->getFamille()->getId(),
                 'label' => $article->getFamille()->getLabel()
             ],
+            'qte' => $article->getQte(),
+            'price' => $article->getPrice(),
+            'photo' => $article->getPhoto(),
+
         ];
     }
 

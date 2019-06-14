@@ -63,9 +63,9 @@
                         sortField: 'description'
                     },
                     {
-                        name: 'qteIni',
-                        title: '<span class="fab fa-docker"></span> QteIni',
-                        sortField: 'qteIni'
+                        name: 'famille',
+                        title: '<span class="fab fa-docker"></span> Famille',
+                        sortField: 'famille'
                     },
                     {
                         name: 'qte',
@@ -81,7 +81,8 @@
                         name: 'photo',
                         title: '<span class="fas fa-money-bill-alt"></span> Photo',
                         sortField: 'photo'
-                    }
+                    },
+                    'actions'
                 ],
                 sortOrder: [
                     { field: 'code', direction: 'asc' }
@@ -109,7 +110,8 @@
                         },
                     }
                 },
-                data: [],
+                datas: [],
+                perPage: 3,
             }
         },
         computed:{
@@ -145,9 +147,9 @@
                 console.log('loaded! .. hide your spinner here')
             },
             dataManager(sortOrder, pagination) {
-                if (this.data.length < 1) return;
+                if (this.datas.length < 1) return;
 
-                let local = this.data;
+                let local = this.datas;
 
                 // sortOrder can be empty, so we have to check for that as well
                 if (sortOrder.length > 0) {
@@ -163,7 +165,7 @@
                     local.length,
                     this.perPage
                 );
-                console.log('pagination:', pagination)
+
                 let from = pagination.from - 1;
                 let to = from + this.perPage;
 
@@ -172,13 +174,13 @@
                     data: _.slice(local, from, to)
                 };
             }
-            },
+        },
 
         watch:{
             localData(resp){
-                this.data = resp.data
+                this.datas = resp.data
             },
-            data(newVal, oldVal) {
+            datas(newVal, oldVal) {
                 this.$refs.vuetable.refresh();
             }
         }
