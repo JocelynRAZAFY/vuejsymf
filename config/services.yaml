@@ -32,3 +32,5 @@ services:
     acme_topic_service:
         class: App\Services\AcmeTopic
         arguments: ['@gos_web_socket.websocket.client_manipulator']
+
+    App\Services\TestProducer: '@old_sound_rabbit_mq.test_producer'

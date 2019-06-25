@@ -8,6 +8,7 @@
 
 namespace App\Manager;
 
+use App\Services\TestProducer;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -17,6 +18,10 @@ use Symfony\Component\Serializer\SerializerInterface;
 
 class UserManager extends BaseManager
 {
+    /**
+     * @var TestProducer
+     */
+    private $testProducer;
 
     public function __construct(
         EntityManagerInterface $em,
@@ -24,8 +29,11 @@ class UserManager extends BaseManager
         RequestStack $requestStack,
         SessionInterface $session,
         LoggerInterface $logger,
-        SerializerInterface $serializer)
+        SerializerInterface $serializer,
+        TestProducer $testProducer)
     {
+        $this->testProducer = $testProducer;
+
         parent::__construct($em, $container, $requestStack, $session, $logger, $serializer);
     }
 
@@ -37,6 +45,11 @@ class UserManager extends BaseManager
             'username' => $user->getUsername(),
             'email' => $user->getEmail(),
         ];
+
+        $rabbitMessage = json_encode(['data' => $result, 'date' => new \DateTime('now')]);
+        $this->testProducer->setContentType('application/json');
+        $this->testProducer->publish($rabbitMessage);
+
         return $this->success($result);
     }
 }
